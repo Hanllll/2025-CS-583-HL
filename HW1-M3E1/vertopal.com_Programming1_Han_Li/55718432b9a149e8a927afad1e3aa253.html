@@ -1,0 +1,3120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>23ecea624ac14ac4bb8cf221acfd7b0b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section
+id="programming-assignment-numerical-optimization-for-logistic-regression"
+class="cell markdown">
+<h1>Programming Assignment: Numerical Optimization for Logistic
+Regression.</h1>
+<h3 id="name--han-li-">Name: [ Han Li ]</h3>
+</section>
+<div class="cell markdown">
+<h2 id="0-you-will-do-the-following">0. You will do the following:</h2>
+<ol>
+<li><p>Read the lecture note: <a
+href="https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf">click
+here</a></p></li>
+<li><p>Read, complete, and run my code.</p></li>
+<li><p><strong>Implement mini-batch SGD</strong> and evaluate the
+performance.</p></li>
+<li><p>Convert the .IPYNB file to .HTML file.</p>
+<ul>
+<li><p>The HTML file must contain <strong>the code</strong> and
+<strong>the output after execution</strong>.</p></li>
+<li><p>Missing <strong>the output after execution</strong> will not be
+graded.</p></li>
+</ul></li>
+<li><p>Upload this .HTML file to your Google Drive, Dropbox, or your
+Github repo. (If you submit the file to Google Drive or Dropbox, you
+must make the file "open-access". The delay caused by "deny of access"
+may result in late penalty.)</p></li>
+<li><p>On Canvas, submit the Google Drive/Dropbox/Github link to the
+HTML file.</p></li>
+</ol>
+<h2 id="grading-criteria">Grading criteria:</h2>
+<ol>
+<li><p>When computing the <code>gradient</code> and
+<code>objective function value</code> using a batch of samples, use
+<strong>matrix-vector multiplication</strong> rather than a FOR LOOP of
+<strong>vector-vector multiplications</strong>.</p></li>
+<li><p>Plot <code>objective function value</code> against
+<code>epochs</code>. In the plot, compare GD, SGD, and MB-SGD (with
+<span class="math inline"><em>b</em> = 8</span> and <span
+class="math inline"><em>b</em> = 64</span>). The plot must look
+reasonable.</p></li>
+</ol>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<section id="1-data-processing" class="cell markdown">
+<h1>1. Data processing</h1>
+<ul>
+<li>Download the Diabete dataset from <a
+href="https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/diabetes"
+class="uri">https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/diabetes</a></li>
+<li>Load the data using sklearn.</li>
+<li>Preprocess the data.</li>
+</ul>
+</section>
+<section id="11-load-the-data" class="cell markdown">
+<h2>1.1. Load the data</h2>
+</section>
+<div class="cell code" data-execution_count="149">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> datasets</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>x_sparse, y <span class="op">=</span> datasets.load_svmlight_file(<span class="st">&#39;diabetes&#39;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> x_sparse.todense()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of x: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(x.shape))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of y: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(y.shape))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape of x: (768, 8)
+Shape of y: (768,)
+</code></pre>
+</div>
+</div>
+<section id="12-partition-to-training-and-test-sets"
+class="cell markdown">
+<h2>1.2. Partition to training and test sets</h2>
+</section>
+<div class="cell code" data-execution_count="150">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># partition the data to training and test sets</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> x.shape[<span class="dv">0</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>n_train <span class="op">=</span> <span class="dv">640</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>n_test <span class="op">=</span> n <span class="op">-</span> n_train</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>rand_indices <span class="op">=</span> numpy.random.permutation(n)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>train_indices <span class="op">=</span> rand_indices[<span class="dv">0</span>:n_train]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>test_indices <span class="op">=</span> rand_indices[n_train:n]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>x_train <span class="op">=</span> x[train_indices, :]</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>x_test <span class="op">=</span> x[test_indices, :]</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>y_train <span class="op">=</span> y[train_indices].reshape(n_train, <span class="dv">1</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> y[test_indices].reshape(n_test, <span class="dv">1</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of x_train: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(x_train.shape))</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of x_test: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(x_test.shape))</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of y_train: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(y_train.shape))</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of y_test: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(y_test.shape))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape of x_train: (640, 8)
+Shape of x_test: (128, 8)
+Shape of y_train: (640, 1)
+Shape of y_test: (128, 1)
+</code></pre>
+</div>
+</div>
+<section id="13-feature-scaling" class="cell markdown">
+<h2>1.3. Feature scaling</h2>
+</section>
+<div class="cell markdown">
+<p>Use the standardization to trainsform both training and test
+features</p>
+</div>
+<div class="cell code" data-execution_count="151">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardization</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate mu and sig using the training set</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> x_train.shape[<span class="dv">1</span>]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> numpy.mean(x_train, axis<span class="op">=</span><span class="dv">0</span>).reshape(<span class="dv">1</span>, d)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>sig <span class="op">=</span> numpy.std(x_train, axis<span class="op">=</span><span class="dv">0</span>).reshape(<span class="dv">1</span>, d)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># transform the training features</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>x_train <span class="op">=</span> (x_train <span class="op">-</span> mu) <span class="op">/</span> (sig <span class="op">+</span> <span class="fl">1E-6</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># transform the test features</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>x_test <span class="op">=</span> (x_test <span class="op">-</span> mu) <span class="op">/</span> (sig <span class="op">+</span> <span class="fl">1E-6</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;test mean = &#39;</span>)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numpy.mean(x_test, axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;test std = &#39;</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numpy.std(x_test, axis<span class="op">=</span><span class="dv">0</span>))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>test mean = 
+[[ 0.01894973 -0.12600067 -0.02837499 -0.06600467 -0.10529198  0.01252587
+  -0.10223594 -0.05094932]]
+test std = 
+[[0.97605818 0.92069793 1.1043023  0.92007248 0.8503511  0.92854884
+  0.79098827 0.9060591 ]]
+</code></pre>
+</div>
+</div>
+<section id="14-add-a-dimension-of-all-ones" class="cell markdown">
+<h2>1.4. Add a dimension of all ones</h2>
+</section>
+<div class="cell code" data-execution_count="152">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>n_train, d <span class="op">=</span> x_train.shape</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x_train <span class="op">=</span> numpy.concatenate((x_train, numpy.ones((n_train, <span class="dv">1</span>))), axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>n_test, d <span class="op">=</span> x_test.shape</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>x_test <span class="op">=</span> numpy.concatenate((x_test, numpy.ones((n_test, <span class="dv">1</span>))), axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of x_train: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(x_train.shape))</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Shape of x_test: &#39;</span> <span class="op">+</span> <span class="bu">str</span>(x_test.shape))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape of x_train: (640, 9)
+Shape of x_test: (128, 9)
+</code></pre>
+</div>
+</div>
+<section id="2-logistic-regression-model" class="cell markdown">
+<h1>2. Logistic regression model</h1>
+<p>The objective function is $Q (w; X, y) = \frac{1}{n} \sum_{i=1}^n
+\log \Big( 1 + \exp \big( - y_i x_i^T w \big) \Big) + \frac{\lambda}{2}
+| w |_2^2 $.</p>
+</section>
+<div class="cell code" data-execution_count="153">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the objective function value</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     x: n-by-d matrix</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     y: n-by-1 matrix</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     objective function value (scalar)</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> objective(w, x, y, lam):</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    n, d <span class="op">=</span> x.shape</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    yx <span class="op">=</span> numpy.multiply(y, x) <span class="co"># n-by-d matrix</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    yxw <span class="op">=</span> numpy.dot(yx, w) <span class="co"># n-by-1 matrix</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    vec1 <span class="op">=</span> numpy.exp(<span class="op">-</span>yxw) <span class="co"># n-by-1 matrix</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    vec2 <span class="op">=</span> numpy.log(<span class="dv">1</span> <span class="op">+</span> vec1) <span class="co"># n-by-1 matrix</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> numpy.mean(vec2) <span class="co"># scalar</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    reg <span class="op">=</span> lam <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> numpy.<span class="bu">sum</span>(w <span class="op">*</span> w) <span class="co"># scalar</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> loss <span class="op">+</span> reg</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    </span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="154">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize w</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> x_train.shape[<span class="dv">1</span>]</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> numpy.zeros((d, <span class="dv">1</span>))</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># evaluate the objective function value at w</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> <span class="fl">1E-6</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>objval0 <span class="op">=</span> objective(w, x_train, y_train, lam)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Initial objective function value = &#39;</span> <span class="op">+</span> <span class="bu">str</span>(objval0))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Initial objective function value = 0.6931471805599453
+</code></pre>
+</div>
+</div>
+<section id="3-numerical-optimization" class="cell markdown">
+<h1>3. Numerical optimization</h1>
+</section>
+<section id="31-gradient-descent" class="cell markdown">
+<h2>3.1. Gradient descent</h2>
+</section>
+<div class="cell markdown">
+<p>The gradient at <span class="math inline"><em>w</em></span> is <span
+class="math inline">$g = - \frac{1}{n} \sum_{i=1}^n \frac{y_i x_i }{1 +
+\exp ( y_i x_i^T w)} + \lambda w$</span></p>
+</div>
+<div class="cell code" data-execution_count="155">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the gradient</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     x: n-by-d matrix</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     y: n-by-1 matrix</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     g: g: d-by-1 matrix, full gradient</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gradient(w, x, y, lam):</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    n, d <span class="op">=</span> x.shape</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    yx <span class="op">=</span> numpy.multiply(y, x) <span class="co"># n-by-d matrix</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    yxw <span class="op">=</span> numpy.dot(yx, w) <span class="co"># n-by-1 matrix</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    vec1 <span class="op">=</span> numpy.exp(yxw) <span class="co"># n-by-1 matrix</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    vec2 <span class="op">=</span> numpy.divide(yx, <span class="dv">1</span><span class="op">+</span>vec1) <span class="co"># n-by-d matrix</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    vec3 <span class="op">=</span> <span class="op">-</span>numpy.mean(vec2, axis<span class="op">=</span><span class="dv">0</span>).reshape(d, <span class="dv">1</span>) <span class="co"># d-by-1 matrix</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> vec3 <span class="op">+</span> lam <span class="op">*</span> w</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> g</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="156">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gradient descent for solving logistic regression</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     x: n-by-d matrix</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     y: n-by-1 matrix</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     stepsize: scalar</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     max_iter: integer, the maximal iterations</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix, initialization of w</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix, the solution</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     objvals: a record of each iteration&#39;s objective value</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> grad_descent(x, y, lam, stepsize, max_iter<span class="op">=</span><span class="dv">100</span>, w<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    n, d <span class="op">=</span> x.shape</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    objvals <span class="op">=</span> numpy.zeros(max_iter) <span class="co"># store the objective values</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> w <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>        w <span class="op">=</span> numpy.zeros((d, <span class="dv">1</span>)) <span class="co"># zero initialization</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(max_iter):</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>        objval <span class="op">=</span> objective(w, x, y, lam)</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>        objvals[t] <span class="op">=</span> objval</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&#39;Objective value at t=&#39;</span> <span class="op">+</span> <span class="bu">str</span>(t) <span class="op">+</span> <span class="st">&#39; is &#39;</span> <span class="op">+</span> <span class="bu">str</span>(objval))</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>        g <span class="op">=</span> gradient(w, x, y, lam)</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>        w <span class="op">-=</span> stepsize <span class="op">*</span> g</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w, objvals</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Run gradient descent.</p>
+</div>
+<div class="cell code" data-execution_count="173">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> <span class="fl">1E-6</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>stepsize <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>w, objvals_gd <span class="op">=</span> grad_descent(x_train, y_train, lam, stepsize)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Objective value at t=0 is 0.6931471805599453
+Objective value at t=1 is 0.591028381324383
+Objective value at t=2 is 0.5507104650535102
+Objective value at t=3 is 0.5292623334486073
+Objective value at t=4 is 0.5159108101016905
+Objective value at t=5 is 0.5068618058821946
+Objective value at t=6 is 0.5004064510880241
+Objective value at t=7 is 0.4956425880462492
+Objective value at t=8 is 0.4920407995941542
+Objective value at t=9 is 0.4892670694050607
+Objective value at t=10 is 0.4870995980138385
+Objective value at t=11 is 0.485385463688193
+Objective value at t=12 is 0.48401615719469243
+Objective value at t=13 is 0.4829128996127569
+Objective value at t=14 is 0.4820174074188493
+Objective value at t=15 is 0.48128586690927627
+Objective value at t=16 is 0.4806848856405292
+Objective value at t=17 is 0.48018870580969814
+Objective value at t=18 is 0.47977724672864064
+Objective value at t=19 is 0.47943470524721155
+Objective value at t=20 is 0.479148539415476
+Objective value at t=21 is 0.4789087201152829
+Objective value at t=22 is 0.4787071730493801
+Objective value at t=23 is 0.47853735789440005
+Objective value at t=24 is 0.47839394757752546
+Objective value at t=25 is 0.4782725815124407
+Objective value at t=26 is 0.4781696740687408
+Objective value at t=27 is 0.4780822647097657
+Objective value at t=28 is 0.4780078998615276
+Objective value at t=29 is 0.47794453915655544
+Objective value at t=30 is 0.4778904805538525
+Objective value at t=31 is 0.477844300186918
+Objective value at t=32 is 0.4778048037839038
+Objective value at t=33 is 0.477770987239514
+Objective value at t=34 is 0.4777420044683868
+Objective value at t=35 is 0.4777171410845914
+Objective value at t=36 is 0.4776957927672282
+Objective value at t=37 is 0.4776774474136028
+Objective value at t=38 is 0.47766167036765167
+Objective value at t=39 is 0.4776480921558334
+Objective value at t=40 is 0.477636398275593
+Objective value at t=41 is 0.47762632067020316
+Objective value at t=42 is 0.4776176305938599
+Objective value at t=43 is 0.47761013262657087
+Objective value at t=44 is 0.47760365964278917
+Objective value at t=45 is 0.4775980685733773
+Objective value at t=46 is 0.4775932368291721
+Objective value at t=47 is 0.47758905927763184
+Objective value at t=48 is 0.4775854456828932
+Objective value at t=49 is 0.4775823185349262
+Objective value at t=50 is 0.47757961120603504
+Objective value at t=51 is 0.4775772663832658
+Objective value at t=52 is 0.47757523473376895
+Objective value at t=53 is 0.47757347376716736
+Objective value at t=54 is 0.4775719468647857
+Objective value at t=55 is 0.4775706224504113
+Objective value at t=56 is 0.47756947328125976
+Objective value at t=57 is 0.477568475841166
+Objective value at t=58 is 0.4775676098208112
+Objective value at t=59 is 0.47756685767213547
+Objective value at t=60 is 0.47756620422605356
+Objective value at t=61 is 0.477565636364236
+Objective value at t=62 is 0.47756514273711487
+Objective value at t=63 is 0.4775647135214421
+Objective value at t=64 is 0.47756434021172156
+Objective value at t=65 is 0.4775640154406724
+Objective value at t=66 is 0.4775637328245963
+Objective value at t=67 is 0.4775634868301193
+Objective value at t=68 is 0.4775632726592934
+Objective value at t=69 is 0.4775630861504793
+Objective value at t=70 is 0.4775629236928016
+Objective value at t=71 is 0.477562782152282
+Objective value at t=72 is 0.47756265880802945
+Objective value at t=73 is 0.4775625512970943
+Objective value at t=74 is 0.47756245756678983
+Objective value at t=75 is 0.47756237583345296
+Objective value at t=76 is 0.477562304546762
+Objective value at t=77 is 0.47756224235884986
+Objective value at t=78 is 0.4775621880975602
+Objective value at t=79 is 0.47756214074327985
+Objective value at t=80 is 0.4775620994088661
+Objective value at t=81 is 0.4775620633222467
+Objective value at t=82 is 0.4775620318113326
+Objective value at t=83 is 0.4775620042909336
+Objective value at t=84 is 0.4775619802514042
+Objective value at t=85 is 0.4775619592487921
+Objective value at t=86 is 0.4775619408962841
+Objective value at t=87 is 0.4775619248567788
+Objective value at t=88 is 0.47756191083643557
+Objective value at t=89 is 0.47756189857906867
+Objective value at t=90 is 0.4775618878612763
+Objective value at t=91 is 0.4775618784882057
+Objective value at t=92 is 0.47756187028987185
+Objective value at t=93 is 0.4775618631179533
+Objective value at t=94 is 0.47756185684300845
+Objective value at t=95 is 0.4775618513520494
+Objective value at t=96 is 0.4775618465464334
+Objective value at t=97 is 0.47756184234002513
+Objective value at t=98 is 0.47756183865759794
+Objective value at t=99 is 0.47756183543344044
+</code></pre>
+</div>
+</div>
+<section id="32-stochastic-gradient-descent-sgd" class="cell markdown">
+<h2>3.2. Stochastic gradient descent (SGD)</h2>
+<p>Define $Q_i (w) = \log \Big( 1 + \exp \big( - y_i x_i^T w \big) \Big)
++ \frac{\lambda}{2} | w |_2^2 $.</p>
+<p>The stochastic gradient at <span
+class="math inline"><em>w</em></span> is <span class="math inline">$g_i
+= \frac{\partial Q_i }{ \partial w} = -\frac{y_i x_i }{1 + \exp ( y_i
+x_i^T w)} + \lambda w$</span>.</p>
+</section>
+<div class="cell code" data-execution_count="158">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the objective Q_i and the gradient of Q_i</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     xi: 1-by-d matrix</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     yi: scalar</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     obj: scalar, the objective Q_i</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     g: d-by-1 matrix, gradient of Q_i</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stochastic_objective_gradient(w, xi, yi, lam):</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    yx <span class="op">=</span> yi <span class="op">*</span> xi <span class="co"># 1-by-d matrix</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    yxw <span class="op">=</span> <span class="bu">float</span>(numpy.dot(yx, w)) <span class="co"># scalar</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># calculate objective function Q_i</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> numpy.log(<span class="dv">1</span> <span class="op">+</span> numpy.exp(<span class="op">-</span>yxw)) <span class="co"># scalar</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>    reg <span class="op">=</span> lam <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> numpy.<span class="bu">sum</span>(w <span class="op">*</span> w) <span class="co"># scalar</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>    obj <span class="op">=</span> loss <span class="op">+</span> reg</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># calculate stochastic gradient</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    g_loss <span class="op">=</span> <span class="op">-</span>yx.T <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> numpy.exp(yxw)) <span class="co"># d-by-1 matrix</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> g_loss <span class="op">+</span> lam <span class="op">*</span> w <span class="co"># d-by-1 matrix</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> obj, g</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="159">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SGD for solving logistic regression</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     x: n-by-d matrix</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     y: n-by-1 matrix</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     stepsize: scalar</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     max_epoch: integer, the maximal epochs</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix, initialization of w</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: the solution</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     objvals: record of each iteration&#39;s objective value</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sgd(x, y, lam, stepsize, max_epoch<span class="op">=</span><span class="dv">100</span>, w<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    n, d <span class="op">=</span> x.shape</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    objvals <span class="op">=</span> numpy.zeros(max_epoch) <span class="co"># store the objective values</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> w <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>        w <span class="op">=</span> numpy.zeros((d, <span class="dv">1</span>)) <span class="co"># zero initialization</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(max_epoch):</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>        <span class="co"># randomly shuffle the samples</span></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>        rand_indices <span class="op">=</span> numpy.random.permutation(n)</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>        x_rand <span class="op">=</span> x[rand_indices, :]</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>        y_rand <span class="op">=</span> y[rand_indices, :]</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>        objval <span class="op">=</span> <span class="dv">0</span> <span class="co"># accumulate the objective values</span></span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>            xi <span class="op">=</span> x_rand[i, :] <span class="co"># 1-by-d matrix</span></span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>            yi <span class="op">=</span> <span class="bu">float</span>(y_rand[i, :]) <span class="co"># scalar</span></span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>            obj, g <span class="op">=</span> stochastic_objective_gradient(w, xi, yi, lam)</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>            objval <span class="op">+=</span> obj</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>            w <span class="op">-=</span> stepsize <span class="op">*</span> g</span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>        stepsize <span class="op">*=</span> <span class="fl">0.9</span> <span class="co"># decrease step size</span></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>        objval <span class="op">/=</span> n</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>        objvals[t] <span class="op">=</span> objval</span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&#39;Objective value at epoch t=&#39;</span> <span class="op">+</span> <span class="bu">str</span>(t) <span class="op">+</span> <span class="st">&#39; is &#39;</span> <span class="op">+</span> <span class="bu">str</span>(objval))</span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w, objvals</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>Run SGD.</p>
+</div>
+<div class="cell code" data-execution_count="160">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> <span class="fl">1E-6</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>stepsize <span class="op">=</span> <span class="fl">0.1</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>w, objvals_sgd <span class="op">=</span> sgd(x_train, y_train, lam, stepsize)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Objective value at epoch t=0 is 0.5377688961376311
+Objective value at epoch t=1 is 0.5227467310902668
+Objective value at epoch t=2 is 0.5181219119493573
+Objective value at epoch t=3 is 0.5210687616936385
+Objective value at epoch t=4 is 0.5100099302661977
+Objective value at epoch t=5 is 0.5027057229472145
+Objective value at epoch t=6 is 0.5045169362564741
+Objective value at epoch t=7 is 0.5031272334102501
+Objective value at epoch t=8 is 0.5022763432624362
+Objective value at epoch t=9 is 0.5026879435806416
+Objective value at epoch t=10 is 0.4967918875932574
+Objective value at epoch t=11 is 0.49370281683877415
+Objective value at epoch t=12 is 0.493443522603791
+Objective value at epoch t=13 is 0.4922430487293254
+Objective value at epoch t=14 is 0.49358129088569536
+Objective value at epoch t=15 is 0.4893220457362134
+Objective value at epoch t=16 is 0.4889077919229183
+Objective value at epoch t=17 is 0.4880758763125007
+Objective value at epoch t=18 is 0.4864115789993451
+Objective value at epoch t=19 is 0.4869281529677546
+Objective value at epoch t=20 is 0.4854239488094535
+Objective value at epoch t=21 is 0.4854507919645246
+Objective value at epoch t=22 is 0.483835768011924
+Objective value at epoch t=23 is 0.4832010362833209
+Objective value at epoch t=24 is 0.4833555454214431
+Objective value at epoch t=25 is 0.48253683157464894
+Objective value at epoch t=26 is 0.48235387039585137
+Objective value at epoch t=27 is 0.48171656912188576
+Objective value at epoch t=28 is 0.48115739236950966
+Objective value at epoch t=29 is 0.480999891084745
+Objective value at epoch t=30 is 0.4804701903401818
+Objective value at epoch t=31 is 0.4803654663992969
+Objective value at epoch t=32 is 0.48004743473120126
+Objective value at epoch t=33 is 0.4796557139081659
+Objective value at epoch t=34 is 0.4795480019007757
+Objective value at epoch t=35 is 0.47941059010845555
+Objective value at epoch t=36 is 0.47916243004079356
+Objective value at epoch t=37 is 0.47906905295020313
+Objective value at epoch t=38 is 0.47893459002433963
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/var/folders/zx/9hd8fp4948d0r4s6gk496ky00000gn/T/ipykernel_215/2481626160.py:27: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  yi = float(y_rand[i, :]) # scalar
+/var/folders/zx/9hd8fp4948d0r4s6gk496ky00000gn/T/ipykernel_215/4188564408.py:12: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  yxw = float(numpy.dot(yx, w)) # scalar
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Objective value at epoch t=39 is 0.4787853325707491
+Objective value at epoch t=40 is 0.4786801579848096
+Objective value at epoch t=41 is 0.4785558859414656
+Objective value at epoch t=42 is 0.47846048414161607
+Objective value at epoch t=43 is 0.4783570166409904
+Objective value at epoch t=44 is 0.4782853280280081
+Objective value at epoch t=45 is 0.4782147575061903
+Objective value at epoch t=46 is 0.47815633782828576
+Objective value at epoch t=47 is 0.47809197825891836
+Objective value at epoch t=48 is 0.47803708467073996
+Objective value at epoch t=49 is 0.4779938247242903
+Objective value at epoch t=50 is 0.47795218743157897
+Objective value at epoch t=51 is 0.4779145427714295
+Objective value at epoch t=52 is 0.4778769734402726
+Objective value at epoch t=53 is 0.47784674057995946
+Objective value at epoch t=54 is 0.47781661200419423
+Objective value at epoch t=55 is 0.47779339931031817
+Objective value at epoch t=56 is 0.47776955967909684
+Objective value at epoch t=57 is 0.47774911979550555
+Objective value at epoch t=58 is 0.4777305913485496
+Objective value at epoch t=59 is 0.4777139294048832
+Objective value at epoch t=60 is 0.4776985798465237
+Objective value at epoch t=61 is 0.4776852042598095
+Objective value at epoch t=62 is 0.4776725402629157
+Objective value at epoch t=63 is 0.47766165868923044
+Objective value at epoch t=64 is 0.47765170960296854
+Objective value at epoch t=65 is 0.47764289606133825
+Objective value at epoch t=66 is 0.4776347758283232
+Objective value at epoch t=67 is 0.47762753622040116
+Objective value at epoch t=68 is 0.4776210144001232
+Objective value at epoch t=69 is 0.47761505559453654
+Objective value at epoch t=70 is 0.4776098383695634
+Objective value at epoch t=71 is 0.477605068020628
+Objective value at epoch t=72 is 0.4776007623934232
+Objective value at epoch t=73 is 0.47759692885271166
+Objective value at epoch t=74 is 0.47759344941279747
+Objective value at epoch t=75 is 0.4775903126786102
+Objective value at epoch t=76 is 0.47758750658620397
+Objective value at epoch t=77 is 0.47758497095983615
+Objective value at epoch t=78 is 0.47758267721843295
+Objective value at epoch t=79 is 0.47758063413907637
+Objective value at epoch t=80 is 0.47757879325425845
+Objective value at epoch t=81 is 0.47757713080120306
+Objective value at epoch t=82 is 0.4775756322646022
+Objective value at epoch t=83 is 0.47757428722941747
+Objective value at epoch t=84 is 0.47757306714682113
+Objective value at epoch t=85 is 0.4775719829172108
+Objective value at epoch t=86 is 0.4775709991568834
+Objective value at epoch t=87 is 0.47757011592060666
+Objective value at epoch t=88 is 0.47756931947074016
+Objective value at epoch t=89 is 0.47756860401916884
+Objective value at epoch t=90 is 0.47756795972451893
+Objective value at epoch t=91 is 0.47756738020055794
+Objective value at epoch t=92 is 0.4775668581723086
+Objective value at epoch t=93 is 0.47756638794886497
+Objective value at epoch t=94 is 0.47756596544212043
+Objective value at epoch t=95 is 0.4775655847714989
+Objective value at epoch t=96 is 0.4775652424693635
+Objective value at epoch t=97 is 0.47756493401111044
+Objective value at epoch t=98 is 0.4775646566318398
+Objective value at epoch t=99 is 0.4775644068057149
+</code></pre>
+</div>
+</div>
+<section id="4-compare-gd-with-sgd" class="cell markdown">
+<h1>4. Compare GD with SGD</h1>
+<p>Plot objective function values against epochs.</p>
+</section>
+<div class="cell code" data-execution_count="161">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>epochs_gd <span class="op">=</span> <span class="bu">range</span>(<span class="bu">len</span>(objvals_gd))</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>epochs_sgd <span class="op">=</span> <span class="bu">range</span>(<span class="bu">len</span>(objvals_sgd))</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>line0, <span class="op">=</span> plt.plot(epochs_gd, objvals_gd, <span class="st">&#39;--b&#39;</span>, linewidth<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>line1, <span class="op">=</span> plt.plot(epochs_sgd, objvals_sgd, <span class="st">&#39;-r&#39;</span>, linewidth<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Epochs&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Objective Value&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>plt.xticks(fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>plt.yticks(fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>plt.legend([line0, line1], [<span class="st">&#39;GD&#39;</span>, <span class="st">&#39;SGD&#39;</span>], fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">&#39;compare_gd_sgd.pdf&#39;</span>, <span class="bu">format</span><span class="op">=</span><span class="st">&#39;pdf&#39;</span>, dpi<span class="op">=</span><span class="dv">1200</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_55718432b9a149e8a927afad1e3aa253/fa225fda68469038e9886a133433305d0e1c35c2.png" /></p>
+</div>
+</div>
+<section id="5-prediction" class="cell markdown">
+<h1>5. Prediction</h1>
+</section>
+<div class="cell code" data-execution_count="162">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict class label</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     X: m-by-d matrix</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     f: m-by-1 matrix, the predictions</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict(w, X):</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    xw <span class="op">=</span> numpy.dot(X, w)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    f <span class="op">=</span> numpy.sign(xw)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> f</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="163">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># evaluate training error</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>f_train <span class="op">=</span> predict(w, x_train)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>diff <span class="op">=</span> numpy.<span class="bu">abs</span>(f_train <span class="op">-</span> y_train) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>error_train <span class="op">=</span> numpy.mean(diff)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Training classification error is &#39;</span> <span class="op">+</span> <span class="bu">str</span>(error_train))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Training classification error is 0.225
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="164">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># evaluate test error</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>f_test <span class="op">=</span> predict(w, x_test)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>diff <span class="op">=</span> numpy.<span class="bu">abs</span>(f_test <span class="op">-</span> y_test) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>error_test <span class="op">=</span> numpy.mean(diff)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Test classification error is &#39;</span> <span class="op">+</span> <span class="bu">str</span>(error_test))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Test classification error is 0.1796875
+</code></pre>
+</div>
+</div>
+<section id="6-mini-batch-sgd-fill-the-code" class="cell markdown">
+<h1>6. Mini-batch SGD (fill the code)</h1>
+</section>
+<section
+id="61-compute-the-objective-q_i-and-its-gradient-using-a-batch-of-samples"
+class="cell markdown">
+<h2>6.1. Compute the objective <span
+class="math inline"><em>Q</em><sub><em>I</em></sub></span> and its
+gradient using a batch of samples</h2>
+<p>Define $Q_I (w) = \frac{1}{b} \sum_{i \in I} \log \Big( 1 + \exp
+\big( - y_i x_i^T w \big) \Big) + \frac{\lambda}{2} | w |_2^2 $, where
+<span class="math inline"><em>I</em></span> is a set containing <span
+class="math inline"><em>b</em></span> indices randomly drawn from <span
+class="math inline">{1, ⋯, <em>n</em>}</span> without replacement.</p>
+<p>The stochastic gradient at <span
+class="math inline"><em>w</em></span> is <span class="math inline">$g_I
+= \frac{\partial Q_I }{ \partial w} = \frac{1}{b} \sum_{i \in I} \frac{-
+y_i x_i }{1 + \exp ( y_i x_i^T w)} + \lambda w$</span>.</p>
+</section>
+<div class="cell code" data-execution_count="165">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the objective Q_I and the gradient of Q_I</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     xi: b-by-d matrix</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     yi: b-by-1 matrix</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     b: integer, the batch size</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     obj: scalar, the objective Q_i</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     g: d-by-1 matrix, gradient of Q_i</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mb_stochastic_objective_gradient(w, xi, yi, lam, b):</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fill the function</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Follow the implementation of stochastic_objective_gradient</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use matrix-vector multiplication; do not use FOR LOOP of vector-vector multiplications</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>    yx <span class="op">=</span> numpy.multiply(yi, xi)</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>    yxw <span class="op">=</span> numpy.dot(yx, w)</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> numpy.mean(numpy.log(<span class="dv">1</span> <span class="op">+</span> numpy.exp(<span class="op">-</span>yxw)))</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>    reg <span class="op">=</span> lam <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> numpy.dot(w.T, w)</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>    obj <span class="op">=</span> loss <span class="op">+</span> reg</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>    exp_yxw <span class="op">=</span> numpy.exp(yxw)</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>    g_loss <span class="op">=</span> <span class="op">-</span> numpy.mean(yx <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> exp_yxw), axis<span class="op">=</span><span class="dv">0</span>).reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> g_loss <span class="op">+</span> lam <span class="op">*</span> w</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>    obj <span class="op">=</span> obj.item() <span class="co"># convert form (1,1) to scalar</span></span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> obj, g</span></code></pre></div>
+</div>
+<section id="62-implement-mini-batch-sgd" class="cell markdown">
+<h2>6.2. Implement mini-batch SGD</h2>
+<p>Hints:</p>
+<ol>
+<li>In every epoch, randomly permute the <span
+class="math inline"><em>n</em></span> samples (just like SGD).</li>
+<li>Each epoch has <span class="math inline">$\frac{n}{b}$</span>
+iterations. In every iteration, use <span
+class="math inline"><em>b</em></span> samples, and compute the gradient
+and objective using the <code>mb_stochastic_objective_gradient</code>
+function. In the next iteration, use the next <span
+class="math inline"><em>b</em></span> samples, and so on.</li>
+</ol>
+</section>
+<div class="cell code" data-execution_count="166">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mini-Batch SGD for solving logistic regression</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Inputs:</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="co">#     x: n-by-d matrix</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co">#     y: n-by-1 matrix</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     lam: scalar, the regularization parameter</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     b: integer, the batch size</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     stepsize: scalar</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     max_epoch: integer, the maximal epochs</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: d-by-1 matrix, initialization of w</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Return:</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     w: the solution</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     objvals: record of each iteration&#39;s objective value</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mb_sgd(x, y, lam, b, stepsize, max_epoch<span class="op">=</span><span class="dv">100</span>, w<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fill the function</span></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Follow the implementation of sgd</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Record one objective value per epoch (not per iteration!)</span></span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>    n,d <span class="op">=</span> x.shape</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>    objvals <span class="op">=</span> numpy.zeros(max_epoch)</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> w <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>        w <span class="op">=</span> numpy.zeros((d,<span class="dv">1</span>))</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(max_epoch):</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>        rand_indices <span class="op">=</span> numpy.random.permutation(n)</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>        x_rand <span class="op">=</span> x[rand_indices, :]</span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>        y_rand <span class="op">=</span> y[rand_indices, :]</span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>        objval <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n, b):</span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>            xi <span class="op">=</span> x_rand[i:i<span class="op">+</span>b, :]</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>            yi <span class="op">=</span> y_rand[i:i<span class="op">+</span>b, :]</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a>            obj, g <span class="op">=</span> mb_stochastic_objective_gradient(w, xi, yi, lam, b)</span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a>            objval <span class="op">+=</span> obj <span class="op">*</span> xi.shape[<span class="dv">0</span>]</span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a>            w <span class="op">-=</span> stepsize <span class="op">*</span> g</span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a>        stepsize <span class="op">*=</span> <span class="fl">0.9</span> <span class="co"># decrease step size</span></span>
+<span id="cb30-36"><a href="#cb30-36" aria-hidden="true" tabindex="-1"></a>        objval <span class="op">/=</span> n</span>
+<span id="cb30-37"><a href="#cb30-37" aria-hidden="true" tabindex="-1"></a>        objvals[t] <span class="op">=</span> objval</span>
+<span id="cb30-38"><a href="#cb30-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-39"><a href="#cb30-39" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&#39;Epoch </span><span class="sc">{</span>t<span class="sc">}</span><span class="ss">, Objective = </span><span class="sc">{</span>objval<span class="sc">:.4f}</span><span class="ss">&#39;</span>)</span>
+<span id="cb30-40"><a href="#cb30-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-41"><a href="#cb30-41" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb30-42"><a href="#cb30-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w, objvals</span></code></pre></div>
+</div>
+<section id="63-run-mb-sgd" class="cell markdown">
+<h2>6.3. Run MB-SGD</h2>
+</section>
+<div class="cell code" data-execution_count="167">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># MB-SGD with batch size b=8</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> <span class="fl">1E-6</span> <span class="co"># do not change</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">8</span> <span class="co"># do not change</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>stepsize <span class="op">=</span> <span class="fl">0.1</span> <span class="co"># you must tune this parameter</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Answer: 0.1 is a good stepsize choice</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>w, objvals_mbsgd8 <span class="op">=</span> mb_sgd(x_train, y_train, lam, b, stepsize)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 0, Objective = 0.5521
+Epoch 1, Objective = 0.4926
+Epoch 2, Objective = 0.4878
+Epoch 3, Objective = 0.4848
+Epoch 4, Objective = 0.4831
+Epoch 5, Objective = 0.4831
+Epoch 6, Objective = 0.4819
+Epoch 7, Objective = 0.4819
+Epoch 8, Objective = 0.4814
+Epoch 9, Objective = 0.4813
+Epoch 10, Objective = 0.4802
+Epoch 11, Objective = 0.4808
+Epoch 12, Objective = 0.4804
+Epoch 13, Objective = 0.4799
+Epoch 14, Objective = 0.4795
+Epoch 15, Objective = 0.4795
+Epoch 16, Objective = 0.4793
+Epoch 17, Objective = 0.4791
+Epoch 18, Objective = 0.4790
+Epoch 19, Objective = 0.4788
+Epoch 20, Objective = 0.4786
+Epoch 21, Objective = 0.4786
+Epoch 22, Objective = 0.4785
+Epoch 23, Objective = 0.4783
+Epoch 24, Objective = 0.4783
+Epoch 25, Objective = 0.4783
+Epoch 26, Objective = 0.4782
+Epoch 27, Objective = 0.4781
+Epoch 28, Objective = 0.4780
+Epoch 29, Objective = 0.4781
+Epoch 30, Objective = 0.4779
+Epoch 31, Objective = 0.4779
+Epoch 32, Objective = 0.4778
+Epoch 33, Objective = 0.4779
+Epoch 34, Objective = 0.4778
+Epoch 35, Objective = 0.4778
+Epoch 36, Objective = 0.4778
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4777
+Epoch 44, Objective = 0.4777
+Epoch 45, Objective = 0.4776
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="179">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>stepsizes <span class="op">=</span> [<span class="fl">0.01</span>, <span class="fl">0.02</span>, <span class="fl">0.03</span>, <span class="fl">0.04</span>, <span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.2</span>, <span class="fl">0.3</span>, <span class="fl">0.4</span>, <span class="fl">0.5</span>, <span class="fl">0.6</span>, <span class="fl">0.7</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>, <span class="dv">1</span>]</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>objvals_dict <span class="op">=</span> {}</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> stepsize <span class="kw">in</span> stepsizes:</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>    w, objvals <span class="op">=</span> mb_sgd(x_train, y_train, lam, b, stepsize)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    objvals_dict[stepsize] <span class="op">=</span> objvals</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>final_values <span class="op">=</span> [objvals[<span class="op">-</span><span class="dv">1</span>] <span class="cf">for</span> objvals <span class="kw">in</span> objvals_dict.values()]</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>plt.plot(stepsizes, final_values, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>)</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Stepsize&#39;</span>)</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Final Objective Value&#39;</span>)</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Value</span></span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x, y <span class="kw">in</span> <span class="bu">zip</span>(stepsizes, final_values):</span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>    plt.text(x, y, <span class="ss">f&#39;</span><span class="sc">{</span>y<span class="sc">:.4f}</span><span class="ss">&#39;</span>, ha<span class="op">=</span><span class="st">&#39;left&#39;</span>, va<span class="op">=</span><span class="st">&#39;bottom&#39;</span>, fontsize<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 0, Objective = 0.6876
+Epoch 1, Objective = 0.6762
+Epoch 2, Objective = 0.6667
+Epoch 3, Objective = 0.6586
+Epoch 4, Objective = 0.6518
+Epoch 5, Objective = 0.6460
+Epoch 6, Objective = 0.6411
+Epoch 7, Objective = 0.6368
+Epoch 8, Objective = 0.6331
+Epoch 9, Objective = 0.6299
+Epoch 10, Objective = 0.6270
+Epoch 11, Objective = 0.6246
+Epoch 12, Objective = 0.6224
+Epoch 13, Objective = 0.6205
+Epoch 14, Objective = 0.6188
+Epoch 15, Objective = 0.6173
+Epoch 16, Objective = 0.6160
+Epoch 17, Objective = 0.6148
+Epoch 18, Objective = 0.6138
+Epoch 19, Objective = 0.6128
+Epoch 20, Objective = 0.6120
+Epoch 21, Objective = 0.6113
+Epoch 22, Objective = 0.6106
+Epoch 23, Objective = 0.6100
+Epoch 24, Objective = 0.6095
+Epoch 25, Objective = 0.6090
+Epoch 26, Objective = 0.6086
+Epoch 27, Objective = 0.6082
+Epoch 28, Objective = 0.6079
+Epoch 29, Objective = 0.6076
+Epoch 30, Objective = 0.6073
+Epoch 31, Objective = 0.6071
+Epoch 32, Objective = 0.6069
+Epoch 33, Objective = 0.6067
+Epoch 34, Objective = 0.6065
+Epoch 35, Objective = 0.6063
+Epoch 36, Objective = 0.6062
+Epoch 37, Objective = 0.6061
+Epoch 38, Objective = 0.6059
+Epoch 39, Objective = 0.6058
+Epoch 40, Objective = 0.6057
+Epoch 41, Objective = 0.6057
+Epoch 42, Objective = 0.6056
+Epoch 43, Objective = 0.6055
+Epoch 44, Objective = 0.6055
+Epoch 45, Objective = 0.6054
+Epoch 46, Objective = 0.6053
+Epoch 47, Objective = 0.6053
+Epoch 48, Objective = 0.6053
+Epoch 49, Objective = 0.6052
+Epoch 50, Objective = 0.6052
+Epoch 51, Objective = 0.6052
+Epoch 52, Objective = 0.6051
+Epoch 53, Objective = 0.6051
+Epoch 54, Objective = 0.6051
+Epoch 55, Objective = 0.6051
+Epoch 56, Objective = 0.6051
+Epoch 57, Objective = 0.6050
+Epoch 58, Objective = 0.6050
+Epoch 59, Objective = 0.6050
+Epoch 60, Objective = 0.6050
+Epoch 61, Objective = 0.6050
+Epoch 62, Objective = 0.6050
+Epoch 63, Objective = 0.6050
+Epoch 64, Objective = 0.6050
+Epoch 65, Objective = 0.6050
+Epoch 66, Objective = 0.6050
+Epoch 67, Objective = 0.6050
+Epoch 68, Objective = 0.6049
+Epoch 69, Objective = 0.6049
+Epoch 70, Objective = 0.6049
+Epoch 71, Objective = 0.6049
+Epoch 72, Objective = 0.6049
+Epoch 73, Objective = 0.6049
+Epoch 74, Objective = 0.6049
+Epoch 75, Objective = 0.6049
+Epoch 76, Objective = 0.6049
+Epoch 77, Objective = 0.6049
+Epoch 78, Objective = 0.6049
+Epoch 79, Objective = 0.6049
+Epoch 80, Objective = 0.6049
+Epoch 81, Objective = 0.6049
+Epoch 82, Objective = 0.6049
+Epoch 83, Objective = 0.6049
+Epoch 84, Objective = 0.6049
+Epoch 85, Objective = 0.6049
+Epoch 86, Objective = 0.6049
+Epoch 87, Objective = 0.6049
+Epoch 88, Objective = 0.6049
+Epoch 89, Objective = 0.6049
+Epoch 90, Objective = 0.6049
+Epoch 91, Objective = 0.6049
+Epoch 92, Objective = 0.6049
+Epoch 93, Objective = 0.6049
+Epoch 94, Objective = 0.6049
+Epoch 95, Objective = 0.6049
+Epoch 96, Objective = 0.6049
+Epoch 97, Objective = 0.6049
+Epoch 98, Objective = 0.6049
+Epoch 99, Objective = 0.6049
+Epoch 0, Objective = 0.6824
+Epoch 1, Objective = 0.6612
+Epoch 2, Objective = 0.6448
+Epoch 3, Objective = 0.6318
+Epoch 4, Objective = 0.6214
+Epoch 5, Objective = 0.6128
+Epoch 6, Objective = 0.6058
+Epoch 7, Objective = 0.6001
+Epoch 8, Objective = 0.5951
+Epoch 9, Objective = 0.5910
+Epoch 10, Objective = 0.5874
+Epoch 11, Objective = 0.5843
+Epoch 12, Objective = 0.5817
+Epoch 13, Objective = 0.5794
+Epoch 14, Objective = 0.5774
+Epoch 15, Objective = 0.5757
+Epoch 16, Objective = 0.5742
+Epoch 17, Objective = 0.5728
+Epoch 18, Objective = 0.5716
+Epoch 19, Objective = 0.5705
+Epoch 20, Objective = 0.5696
+Epoch 21, Objective = 0.5688
+Epoch 22, Objective = 0.5681
+Epoch 23, Objective = 0.5674
+Epoch 24, Objective = 0.5668
+Epoch 25, Objective = 0.5663
+Epoch 26, Objective = 0.5658
+Epoch 27, Objective = 0.5654
+Epoch 28, Objective = 0.5651
+Epoch 29, Objective = 0.5647
+Epoch 30, Objective = 0.5644
+Epoch 31, Objective = 0.5642
+Epoch 32, Objective = 0.5639
+Epoch 33, Objective = 0.5637
+Epoch 34, Objective = 0.5635
+Epoch 35, Objective = 0.5634
+Epoch 36, Objective = 0.5632
+Epoch 37, Objective = 0.5631
+Epoch 38, Objective = 0.5629
+Epoch 39, Objective = 0.5628
+Epoch 40, Objective = 0.5627
+Epoch 41, Objective = 0.5626
+Epoch 42, Objective = 0.5626
+Epoch 43, Objective = 0.5625
+Epoch 44, Objective = 0.5624
+Epoch 45, Objective = 0.5624
+Epoch 46, Objective = 0.5623
+Epoch 47, Objective = 0.5623
+Epoch 48, Objective = 0.5622
+Epoch 49, Objective = 0.5622
+Epoch 50, Objective = 0.5621
+Epoch 51, Objective = 0.5621
+Epoch 52, Objective = 0.5621
+Epoch 53, Objective = 0.5621
+Epoch 54, Objective = 0.5620
+Epoch 55, Objective = 0.5620
+Epoch 56, Objective = 0.5620
+Epoch 57, Objective = 0.5620
+Epoch 58, Objective = 0.5620
+Epoch 59, Objective = 0.5620
+Epoch 60, Objective = 0.5619
+Epoch 61, Objective = 0.5619
+Epoch 62, Objective = 0.5619
+Epoch 63, Objective = 0.5619
+Epoch 64, Objective = 0.5619
+Epoch 65, Objective = 0.5619
+Epoch 66, Objective = 0.5619
+Epoch 67, Objective = 0.5619
+Epoch 68, Objective = 0.5619
+Epoch 69, Objective = 0.5619
+Epoch 70, Objective = 0.5619
+Epoch 71, Objective = 0.5619
+Epoch 72, Objective = 0.5619
+Epoch 73, Objective = 0.5619
+Epoch 74, Objective = 0.5619
+Epoch 75, Objective = 0.5619
+Epoch 76, Objective = 0.5619
+Epoch 77, Objective = 0.5619
+Epoch 78, Objective = 0.5619
+Epoch 79, Objective = 0.5618
+Epoch 80, Objective = 0.5618
+Epoch 81, Objective = 0.5618
+Epoch 82, Objective = 0.5618
+Epoch 83, Objective = 0.5618
+Epoch 84, Objective = 0.5618
+Epoch 85, Objective = 0.5618
+Epoch 86, Objective = 0.5618
+Epoch 87, Objective = 0.5618
+Epoch 88, Objective = 0.5618
+Epoch 89, Objective = 0.5618
+Epoch 90, Objective = 0.5618
+Epoch 91, Objective = 0.5618
+Epoch 92, Objective = 0.5618
+Epoch 93, Objective = 0.5618
+Epoch 94, Objective = 0.5618
+Epoch 95, Objective = 0.5618
+Epoch 96, Objective = 0.5618
+Epoch 97, Objective = 0.5618
+Epoch 98, Objective = 0.5618
+Epoch 99, Objective = 0.5618
+Epoch 0, Objective = 0.6774
+Epoch 1, Objective = 0.6478
+Epoch 2, Objective = 0.6263
+Epoch 3, Objective = 0.6103
+Epoch 4, Objective = 0.5982
+Epoch 5, Objective = 0.5886
+Epoch 6, Objective = 0.5810
+Epoch 7, Objective = 0.5748
+Epoch 8, Objective = 0.5696
+Epoch 9, Objective = 0.5654
+Epoch 10, Objective = 0.5618
+Epoch 11, Objective = 0.5588
+Epoch 12, Objective = 0.5561
+Epoch 13, Objective = 0.5539
+Epoch 14, Objective = 0.5520
+Epoch 15, Objective = 0.5503
+Epoch 16, Objective = 0.5489
+Epoch 17, Objective = 0.5476
+Epoch 18, Objective = 0.5464
+Epoch 19, Objective = 0.5455
+Epoch 20, Objective = 0.5446
+Epoch 21, Objective = 0.5438
+Epoch 22, Objective = 0.5431
+Epoch 23, Objective = 0.5425
+Epoch 24, Objective = 0.5420
+Epoch 25, Objective = 0.5415
+Epoch 26, Objective = 0.5411
+Epoch 27, Objective = 0.5407
+Epoch 28, Objective = 0.5404
+Epoch 29, Objective = 0.5401
+Epoch 30, Objective = 0.5398
+Epoch 31, Objective = 0.5395
+Epoch 32, Objective = 0.5393
+Epoch 33, Objective = 0.5391
+Epoch 34, Objective = 0.5390
+Epoch 35, Objective = 0.5388
+Epoch 36, Objective = 0.5387
+Epoch 37, Objective = 0.5385
+Epoch 38, Objective = 0.5384
+Epoch 39, Objective = 0.5383
+Epoch 40, Objective = 0.5382
+Epoch 41, Objective = 0.5381
+Epoch 42, Objective = 0.5381
+Epoch 43, Objective = 0.5380
+Epoch 44, Objective = 0.5379
+Epoch 45, Objective = 0.5379
+Epoch 46, Objective = 0.5378
+Epoch 47, Objective = 0.5378
+Epoch 48, Objective = 0.5378
+Epoch 49, Objective = 0.5377
+Epoch 50, Objective = 0.5377
+Epoch 51, Objective = 0.5377
+Epoch 52, Objective = 0.5376
+Epoch 53, Objective = 0.5376
+Epoch 54, Objective = 0.5376
+Epoch 55, Objective = 0.5376
+Epoch 56, Objective = 0.5376
+Epoch 57, Objective = 0.5376
+Epoch 58, Objective = 0.5375
+Epoch 59, Objective = 0.5375
+Epoch 60, Objective = 0.5375
+Epoch 61, Objective = 0.5375
+Epoch 62, Objective = 0.5375
+Epoch 63, Objective = 0.5375
+Epoch 64, Objective = 0.5375
+Epoch 65, Objective = 0.5375
+Epoch 66, Objective = 0.5375
+Epoch 67, Objective = 0.5375
+Epoch 68, Objective = 0.5375
+Epoch 69, Objective = 0.5375
+Epoch 70, Objective = 0.5375
+Epoch 71, Objective = 0.5374
+Epoch 72, Objective = 0.5374
+Epoch 73, Objective = 0.5374
+Epoch 74, Objective = 0.5374
+Epoch 75, Objective = 0.5374
+Epoch 76, Objective = 0.5374
+Epoch 77, Objective = 0.5374
+Epoch 78, Objective = 0.5374
+Epoch 79, Objective = 0.5374
+Epoch 80, Objective = 0.5374
+Epoch 81, Objective = 0.5374
+Epoch 82, Objective = 0.5374
+Epoch 83, Objective = 0.5374
+Epoch 84, Objective = 0.5374
+Epoch 85, Objective = 0.5374
+Epoch 86, Objective = 0.5374
+Epoch 87, Objective = 0.5374
+Epoch 88, Objective = 0.5374
+Epoch 89, Objective = 0.5374
+Epoch 90, Objective = 0.5374
+Epoch 91, Objective = 0.5374
+Epoch 92, Objective = 0.5374
+Epoch 93, Objective = 0.5374
+Epoch 94, Objective = 0.5374
+Epoch 95, Objective = 0.5374
+Epoch 96, Objective = 0.5374
+Epoch 97, Objective = 0.5374
+Epoch 98, Objective = 0.5374
+Epoch 99, Objective = 0.5374
+Epoch 0, Objective = 0.6729
+Epoch 1, Objective = 0.6357
+Epoch 2, Objective = 0.6108
+Epoch 3, Objective = 0.5932
+Epoch 4, Objective = 0.5803
+Epoch 5, Objective = 0.5704
+Epoch 6, Objective = 0.5627
+Epoch 7, Objective = 0.5566
+Epoch 8, Objective = 0.5517
+Epoch 9, Objective = 0.5476
+Epoch 10, Objective = 0.5442
+Epoch 11, Objective = 0.5413
+Epoch 12, Objective = 0.5390
+Epoch 13, Objective = 0.5368
+Epoch 14, Objective = 0.5351
+Epoch 15, Objective = 0.5335
+Epoch 16, Objective = 0.5322
+Epoch 17, Objective = 0.5311
+Epoch 18, Objective = 0.5300
+Epoch 19, Objective = 0.5291
+Epoch 20, Objective = 0.5284
+Epoch 21, Objective = 0.5277
+Epoch 22, Objective = 0.5271
+Epoch 23, Objective = 0.5265
+Epoch 24, Objective = 0.5260
+Epoch 25, Objective = 0.5256
+Epoch 26, Objective = 0.5252
+Epoch 27, Objective = 0.5249
+Epoch 28, Objective = 0.5246
+Epoch 29, Objective = 0.5243
+Epoch 30, Objective = 0.5241
+Epoch 31, Objective = 0.5239
+Epoch 32, Objective = 0.5237
+Epoch 33, Objective = 0.5235
+Epoch 34, Objective = 0.5233
+Epoch 35, Objective = 0.5232
+Epoch 36, Objective = 0.5231
+Epoch 37, Objective = 0.5230
+Epoch 38, Objective = 0.5229
+Epoch 39, Objective = 0.5228
+Epoch 40, Objective = 0.5227
+Epoch 41, Objective = 0.5226
+Epoch 42, Objective = 0.5226
+Epoch 43, Objective = 0.5225
+Epoch 44, Objective = 0.5225
+Epoch 45, Objective = 0.5224
+Epoch 46, Objective = 0.5224
+Epoch 47, Objective = 0.5223
+Epoch 48, Objective = 0.5223
+Epoch 49, Objective = 0.5223
+Epoch 50, Objective = 0.5222
+Epoch 51, Objective = 0.5222
+Epoch 52, Objective = 0.5222
+Epoch 53, Objective = 0.5222
+Epoch 54, Objective = 0.5221
+Epoch 55, Objective = 0.5221
+Epoch 56, Objective = 0.5221
+Epoch 57, Objective = 0.5221
+Epoch 58, Objective = 0.5221
+Epoch 59, Objective = 0.5221
+Epoch 60, Objective = 0.5221
+Epoch 61, Objective = 0.5221
+Epoch 62, Objective = 0.5221
+Epoch 63, Objective = 0.5220
+Epoch 64, Objective = 0.5220
+Epoch 65, Objective = 0.5220
+Epoch 66, Objective = 0.5220
+Epoch 67, Objective = 0.5220
+Epoch 68, Objective = 0.5220
+Epoch 69, Objective = 0.5220
+Epoch 70, Objective = 0.5220
+Epoch 71, Objective = 0.5220
+Epoch 72, Objective = 0.5220
+Epoch 73, Objective = 0.5220
+Epoch 74, Objective = 0.5220
+Epoch 75, Objective = 0.5220
+Epoch 76, Objective = 0.5220
+Epoch 77, Objective = 0.5220
+Epoch 78, Objective = 0.5220
+Epoch 79, Objective = 0.5220
+Epoch 80, Objective = 0.5220
+Epoch 81, Objective = 0.5220
+Epoch 82, Objective = 0.5220
+Epoch 83, Objective = 0.5220
+Epoch 84, Objective = 0.5220
+Epoch 85, Objective = 0.5220
+Epoch 86, Objective = 0.5220
+Epoch 87, Objective = 0.5220
+Epoch 88, Objective = 0.5220
+Epoch 89, Objective = 0.5220
+Epoch 90, Objective = 0.5220
+Epoch 91, Objective = 0.5220
+Epoch 92, Objective = 0.5220
+Epoch 93, Objective = 0.5220
+Epoch 94, Objective = 0.5220
+Epoch 95, Objective = 0.5220
+Epoch 96, Objective = 0.5220
+Epoch 97, Objective = 0.5220
+Epoch 98, Objective = 0.5220
+Epoch 99, Objective = 0.5220
+Epoch 0, Objective = 0.6681
+Epoch 1, Objective = 0.6251
+Epoch 2, Objective = 0.5978
+Epoch 3, Objective = 0.5793
+Epoch 4, Objective = 0.5662
+Epoch 5, Objective = 0.5566
+Epoch 6, Objective = 0.5492
+Epoch 7, Objective = 0.5432
+Epoch 8, Objective = 0.5385
+Epoch 9, Objective = 0.5348
+Epoch 10, Objective = 0.5316
+Epoch 11, Objective = 0.5289
+Epoch 12, Objective = 0.5268
+Epoch 13, Objective = 0.5249
+Epoch 14, Objective = 0.5232
+Epoch 15, Objective = 0.5219
+Epoch 16, Objective = 0.5206
+Epoch 17, Objective = 0.5196
+Epoch 18, Objective = 0.5188
+Epoch 19, Objective = 0.5179
+Epoch 20, Objective = 0.5172
+Epoch 21, Objective = 0.5166
+Epoch 22, Objective = 0.5161
+Epoch 23, Objective = 0.5156
+Epoch 24, Objective = 0.5151
+Epoch 25, Objective = 0.5148
+Epoch 26, Objective = 0.5145
+Epoch 27, Objective = 0.5141
+Epoch 28, Objective = 0.5139
+Epoch 29, Objective = 0.5136
+Epoch 30, Objective = 0.5134
+Epoch 31, Objective = 0.5132
+Epoch 32, Objective = 0.5131
+Epoch 33, Objective = 0.5129
+Epoch 34, Objective = 0.5128
+Epoch 35, Objective = 0.5126
+Epoch 36, Objective = 0.5125
+Epoch 37, Objective = 0.5124
+Epoch 38, Objective = 0.5124
+Epoch 39, Objective = 0.5123
+Epoch 40, Objective = 0.5122
+Epoch 41, Objective = 0.5121
+Epoch 42, Objective = 0.5121
+Epoch 43, Objective = 0.5120
+Epoch 44, Objective = 0.5120
+Epoch 45, Objective = 0.5119
+Epoch 46, Objective = 0.5119
+Epoch 47, Objective = 0.5119
+Epoch 48, Objective = 0.5118
+Epoch 49, Objective = 0.5118
+Epoch 50, Objective = 0.5118
+Epoch 51, Objective = 0.5118
+Epoch 52, Objective = 0.5118
+Epoch 53, Objective = 0.5117
+Epoch 54, Objective = 0.5117
+Epoch 55, Objective = 0.5117
+Epoch 56, Objective = 0.5117
+Epoch 57, Objective = 0.5117
+Epoch 58, Objective = 0.5117
+Epoch 59, Objective = 0.5117
+Epoch 60, Objective = 0.5117
+Epoch 61, Objective = 0.5116
+Epoch 62, Objective = 0.5116
+Epoch 63, Objective = 0.5116
+Epoch 64, Objective = 0.5116
+Epoch 65, Objective = 0.5116
+Epoch 66, Objective = 0.5116
+Epoch 67, Objective = 0.5116
+Epoch 68, Objective = 0.5116
+Epoch 69, Objective = 0.5116
+Epoch 70, Objective = 0.5116
+Epoch 71, Objective = 0.5116
+Epoch 72, Objective = 0.5116
+Epoch 73, Objective = 0.5116
+Epoch 74, Objective = 0.5116
+Epoch 75, Objective = 0.5116
+Epoch 76, Objective = 0.5116
+Epoch 77, Objective = 0.5116
+Epoch 78, Objective = 0.5116
+Epoch 79, Objective = 0.5116
+Epoch 80, Objective = 0.5116
+Epoch 81, Objective = 0.5116
+Epoch 82, Objective = 0.5116
+Epoch 83, Objective = 0.5116
+Epoch 84, Objective = 0.5116
+Epoch 85, Objective = 0.5116
+Epoch 86, Objective = 0.5116
+Epoch 87, Objective = 0.5116
+Epoch 88, Objective = 0.5116
+Epoch 89, Objective = 0.5116
+Epoch 90, Objective = 0.5116
+Epoch 91, Objective = 0.5116
+Epoch 92, Objective = 0.5116
+Epoch 93, Objective = 0.5116
+Epoch 94, Objective = 0.5116
+Epoch 95, Objective = 0.5116
+Epoch 96, Objective = 0.5116
+Epoch 97, Objective = 0.5116
+Epoch 98, Objective = 0.5116
+Epoch 99, Objective = 0.5116
+Epoch 0, Objective = 0.6482
+Epoch 1, Objective = 0.5849
+Epoch 2, Objective = 0.5542
+Epoch 3, Objective = 0.5368
+Epoch 4, Objective = 0.5258
+Epoch 5, Objective = 0.5180
+Epoch 6, Objective = 0.5124
+Epoch 7, Objective = 0.5085
+Epoch 8, Objective = 0.5051
+Epoch 9, Objective = 0.5027
+Epoch 10, Objective = 0.5005
+Epoch 11, Objective = 0.4989
+Epoch 12, Objective = 0.4976
+Epoch 13, Objective = 0.4963
+Epoch 14, Objective = 0.4953
+Epoch 15, Objective = 0.4945
+Epoch 16, Objective = 0.4938
+Epoch 17, Objective = 0.4932
+Epoch 18, Objective = 0.4927
+Epoch 19, Objective = 0.4923
+Epoch 20, Objective = 0.4918
+Epoch 21, Objective = 0.4915
+Epoch 22, Objective = 0.4912
+Epoch 23, Objective = 0.4909
+Epoch 24, Objective = 0.4907
+Epoch 25, Objective = 0.4905
+Epoch 26, Objective = 0.4903
+Epoch 27, Objective = 0.4902
+Epoch 28, Objective = 0.4900
+Epoch 29, Objective = 0.4899
+Epoch 30, Objective = 0.4898
+Epoch 31, Objective = 0.4897
+Epoch 32, Objective = 0.4896
+Epoch 33, Objective = 0.4895
+Epoch 34, Objective = 0.4894
+Epoch 35, Objective = 0.4893
+Epoch 36, Objective = 0.4893
+Epoch 37, Objective = 0.4892
+Epoch 38, Objective = 0.4892
+Epoch 39, Objective = 0.4891
+Epoch 40, Objective = 0.4891
+Epoch 41, Objective = 0.4891
+Epoch 42, Objective = 0.4890
+Epoch 43, Objective = 0.4890
+Epoch 44, Objective = 0.4890
+Epoch 45, Objective = 0.4890
+Epoch 46, Objective = 0.4890
+Epoch 47, Objective = 0.4889
+Epoch 48, Objective = 0.4889
+Epoch 49, Objective = 0.4889
+Epoch 50, Objective = 0.4889
+Epoch 51, Objective = 0.4889
+Epoch 52, Objective = 0.4889
+Epoch 53, Objective = 0.4889
+Epoch 54, Objective = 0.4889
+Epoch 55, Objective = 0.4888
+Epoch 56, Objective = 0.4888
+Epoch 57, Objective = 0.4888
+Epoch 58, Objective = 0.4888
+Epoch 59, Objective = 0.4888
+Epoch 60, Objective = 0.4888
+Epoch 61, Objective = 0.4888
+Epoch 62, Objective = 0.4888
+Epoch 63, Objective = 0.4888
+Epoch 64, Objective = 0.4888
+Epoch 65, Objective = 0.4888
+Epoch 66, Objective = 0.4888
+Epoch 67, Objective = 0.4888
+Epoch 68, Objective = 0.4888
+Epoch 69, Objective = 0.4888
+Epoch 70, Objective = 0.4888
+Epoch 71, Objective = 0.4888
+Epoch 72, Objective = 0.4888
+Epoch 73, Objective = 0.4888
+Epoch 74, Objective = 0.4888
+Epoch 75, Objective = 0.4888
+Epoch 76, Objective = 0.4888
+Epoch 77, Objective = 0.4888
+Epoch 78, Objective = 0.4888
+Epoch 79, Objective = 0.4888
+Epoch 80, Objective = 0.4888
+Epoch 81, Objective = 0.4888
+Epoch 82, Objective = 0.4888
+Epoch 83, Objective = 0.4888
+Epoch 84, Objective = 0.4888
+Epoch 85, Objective = 0.4888
+Epoch 86, Objective = 0.4888
+Epoch 87, Objective = 0.4888
+Epoch 88, Objective = 0.4888
+Epoch 89, Objective = 0.4888
+Epoch 90, Objective = 0.4888
+Epoch 91, Objective = 0.4888
+Epoch 92, Objective = 0.4888
+Epoch 93, Objective = 0.4888
+Epoch 94, Objective = 0.4888
+Epoch 95, Objective = 0.4888
+Epoch 96, Objective = 0.4888
+Epoch 97, Objective = 0.4888
+Epoch 98, Objective = 0.4888
+Epoch 99, Objective = 0.4888
+Epoch 0, Objective = 0.6173
+Epoch 1, Objective = 0.5428
+Epoch 2, Objective = 0.5167
+Epoch 3, Objective = 0.5052
+Epoch 4, Objective = 0.4974
+Epoch 5, Objective = 0.4931
+Epoch 6, Objective = 0.4903
+Epoch 7, Objective = 0.4878
+Epoch 8, Objective = 0.4862
+Epoch 9, Objective = 0.4850
+Epoch 10, Objective = 0.4842
+Epoch 11, Objective = 0.4834
+Epoch 12, Objective = 0.4830
+Epoch 13, Objective = 0.4825
+Epoch 14, Objective = 0.4820
+Epoch 15, Objective = 0.4817
+Epoch 16, Objective = 0.4815
+Epoch 17, Objective = 0.4811
+Epoch 18, Objective = 0.4809
+Epoch 19, Objective = 0.4808
+Epoch 20, Objective = 0.4806
+Epoch 21, Objective = 0.4806
+Epoch 22, Objective = 0.4804
+Epoch 23, Objective = 0.4802
+Epoch 24, Objective = 0.4801
+Epoch 25, Objective = 0.4801
+Epoch 26, Objective = 0.4800
+Epoch 27, Objective = 0.4800
+Epoch 28, Objective = 0.4799
+Epoch 29, Objective = 0.4799
+Epoch 30, Objective = 0.4799
+Epoch 31, Objective = 0.4798
+Epoch 32, Objective = 0.4798
+Epoch 33, Objective = 0.4797
+Epoch 34, Objective = 0.4797
+Epoch 35, Objective = 0.4797
+Epoch 36, Objective = 0.4797
+Epoch 37, Objective = 0.4796
+Epoch 38, Objective = 0.4796
+Epoch 39, Objective = 0.4796
+Epoch 40, Objective = 0.4796
+Epoch 41, Objective = 0.4796
+Epoch 42, Objective = 0.4796
+Epoch 43, Objective = 0.4796
+Epoch 44, Objective = 0.4796
+Epoch 45, Objective = 0.4795
+Epoch 46, Objective = 0.4795
+Epoch 47, Objective = 0.4795
+Epoch 48, Objective = 0.4795
+Epoch 49, Objective = 0.4795
+Epoch 50, Objective = 0.4795
+Epoch 51, Objective = 0.4795
+Epoch 52, Objective = 0.4795
+Epoch 53, Objective = 0.4795
+Epoch 54, Objective = 0.4795
+Epoch 55, Objective = 0.4795
+Epoch 56, Objective = 0.4795
+Epoch 57, Objective = 0.4795
+Epoch 58, Objective = 0.4795
+Epoch 59, Objective = 0.4795
+Epoch 60, Objective = 0.4795
+Epoch 61, Objective = 0.4795
+Epoch 62, Objective = 0.4795
+Epoch 63, Objective = 0.4795
+Epoch 64, Objective = 0.4795
+Epoch 65, Objective = 0.4795
+Epoch 66, Objective = 0.4795
+Epoch 67, Objective = 0.4795
+Epoch 68, Objective = 0.4795
+Epoch 69, Objective = 0.4795
+Epoch 70, Objective = 0.4795
+Epoch 71, Objective = 0.4795
+Epoch 72, Objective = 0.4795
+Epoch 73, Objective = 0.4795
+Epoch 74, Objective = 0.4795
+Epoch 75, Objective = 0.4795
+Epoch 76, Objective = 0.4795
+Epoch 77, Objective = 0.4795
+Epoch 78, Objective = 0.4795
+Epoch 79, Objective = 0.4795
+Epoch 80, Objective = 0.4795
+Epoch 81, Objective = 0.4795
+Epoch 82, Objective = 0.4795
+Epoch 83, Objective = 0.4795
+Epoch 84, Objective = 0.4795
+Epoch 85, Objective = 0.4795
+Epoch 86, Objective = 0.4795
+Epoch 87, Objective = 0.4795
+Epoch 88, Objective = 0.4795
+Epoch 89, Objective = 0.4795
+Epoch 90, Objective = 0.4795
+Epoch 91, Objective = 0.4795
+Epoch 92, Objective = 0.4795
+Epoch 93, Objective = 0.4795
+Epoch 94, Objective = 0.4795
+Epoch 95, Objective = 0.4795
+Epoch 96, Objective = 0.4795
+Epoch 97, Objective = 0.4795
+Epoch 98, Objective = 0.4795
+Epoch 99, Objective = 0.4795
+Epoch 0, Objective = 0.5986
+Epoch 1, Objective = 0.5202
+Epoch 2, Objective = 0.5007
+Epoch 3, Objective = 0.4924
+Epoch 4, Objective = 0.4882
+Epoch 5, Objective = 0.4856
+Epoch 6, Objective = 0.4835
+Epoch 7, Objective = 0.4821
+Epoch 8, Objective = 0.4817
+Epoch 9, Objective = 0.4810
+Epoch 10, Objective = 0.4808
+Epoch 11, Objective = 0.4801
+Epoch 12, Objective = 0.4796
+Epoch 13, Objective = 0.4797
+Epoch 14, Objective = 0.4793
+Epoch 15, Objective = 0.4791
+Epoch 16, Objective = 0.4789
+Epoch 17, Objective = 0.4789
+Epoch 18, Objective = 0.4789
+Epoch 19, Objective = 0.4786
+Epoch 20, Objective = 0.4786
+Epoch 21, Objective = 0.4786
+Epoch 22, Objective = 0.4784
+Epoch 23, Objective = 0.4785
+Epoch 24, Objective = 0.4783
+Epoch 25, Objective = 0.4783
+Epoch 26, Objective = 0.4783
+Epoch 27, Objective = 0.4782
+Epoch 28, Objective = 0.4782
+Epoch 29, Objective = 0.4782
+Epoch 30, Objective = 0.4782
+Epoch 31, Objective = 0.4782
+Epoch 32, Objective = 0.4781
+Epoch 33, Objective = 0.4781
+Epoch 34, Objective = 0.4781
+Epoch 35, Objective = 0.4781
+Epoch 36, Objective = 0.4781
+Epoch 37, Objective = 0.4781
+Epoch 38, Objective = 0.4780
+Epoch 39, Objective = 0.4780
+Epoch 40, Objective = 0.4780
+Epoch 41, Objective = 0.4780
+Epoch 42, Objective = 0.4780
+Epoch 43, Objective = 0.4780
+Epoch 44, Objective = 0.4780
+Epoch 45, Objective = 0.4780
+Epoch 46, Objective = 0.4780
+Epoch 47, Objective = 0.4780
+Epoch 48, Objective = 0.4780
+Epoch 49, Objective = 0.4780
+Epoch 50, Objective = 0.4780
+Epoch 51, Objective = 0.4780
+Epoch 52, Objective = 0.4780
+Epoch 53, Objective = 0.4780
+Epoch 54, Objective = 0.4780
+Epoch 55, Objective = 0.4780
+Epoch 56, Objective = 0.4780
+Epoch 57, Objective = 0.4780
+Epoch 58, Objective = 0.4780
+Epoch 59, Objective = 0.4780
+Epoch 60, Objective = 0.4780
+Epoch 61, Objective = 0.4780
+Epoch 62, Objective = 0.4780
+Epoch 63, Objective = 0.4780
+Epoch 64, Objective = 0.4780
+Epoch 65, Objective = 0.4780
+Epoch 66, Objective = 0.4780
+Epoch 67, Objective = 0.4780
+Epoch 68, Objective = 0.4780
+Epoch 69, Objective = 0.4780
+Epoch 70, Objective = 0.4780
+Epoch 71, Objective = 0.4780
+Epoch 72, Objective = 0.4780
+Epoch 73, Objective = 0.4780
+Epoch 74, Objective = 0.4780
+Epoch 75, Objective = 0.4780
+Epoch 76, Objective = 0.4780
+Epoch 77, Objective = 0.4780
+Epoch 78, Objective = 0.4780
+Epoch 79, Objective = 0.4780
+Epoch 80, Objective = 0.4780
+Epoch 81, Objective = 0.4780
+Epoch 82, Objective = 0.4780
+Epoch 83, Objective = 0.4780
+Epoch 84, Objective = 0.4780
+Epoch 85, Objective = 0.4780
+Epoch 86, Objective = 0.4780
+Epoch 87, Objective = 0.4780
+Epoch 88, Objective = 0.4780
+Epoch 89, Objective = 0.4780
+Epoch 90, Objective = 0.4780
+Epoch 91, Objective = 0.4780
+Epoch 92, Objective = 0.4780
+Epoch 93, Objective = 0.4780
+Epoch 94, Objective = 0.4780
+Epoch 95, Objective = 0.4780
+Epoch 96, Objective = 0.4780
+Epoch 97, Objective = 0.4780
+Epoch 98, Objective = 0.4780
+Epoch 99, Objective = 0.4780
+Epoch 0, Objective = 0.5867
+Epoch 1, Objective = 0.5117
+Epoch 2, Objective = 0.4937
+Epoch 3, Objective = 0.4879
+Epoch 4, Objective = 0.4850
+Epoch 5, Objective = 0.4828
+Epoch 6, Objective = 0.4813
+Epoch 7, Objective = 0.4807
+Epoch 8, Objective = 0.4802
+Epoch 9, Objective = 0.4799
+Epoch 10, Objective = 0.4797
+Epoch 11, Objective = 0.4792
+Epoch 12, Objective = 0.4790
+Epoch 13, Objective = 0.4792
+Epoch 14, Objective = 0.4787
+Epoch 15, Objective = 0.4786
+Epoch 16, Objective = 0.4787
+Epoch 17, Objective = 0.4786
+Epoch 18, Objective = 0.4785
+Epoch 19, Objective = 0.4784
+Epoch 20, Objective = 0.4784
+Epoch 21, Objective = 0.4783
+Epoch 22, Objective = 0.4782
+Epoch 23, Objective = 0.4781
+Epoch 24, Objective = 0.4780
+Epoch 25, Objective = 0.4780
+Epoch 26, Objective = 0.4780
+Epoch 27, Objective = 0.4780
+Epoch 28, Objective = 0.4779
+Epoch 29, Objective = 0.4779
+Epoch 30, Objective = 0.4779
+Epoch 31, Objective = 0.4779
+Epoch 32, Objective = 0.4778
+Epoch 33, Objective = 0.4778
+Epoch 34, Objective = 0.4778
+Epoch 35, Objective = 0.4777
+Epoch 36, Objective = 0.4778
+Epoch 37, Objective = 0.4778
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4777
+Epoch 44, Objective = 0.4777
+Epoch 45, Objective = 0.4777
+Epoch 46, Objective = 0.4777
+Epoch 47, Objective = 0.4777
+Epoch 48, Objective = 0.4777
+Epoch 49, Objective = 0.4777
+Epoch 50, Objective = 0.4777
+Epoch 51, Objective = 0.4777
+Epoch 52, Objective = 0.4777
+Epoch 53, Objective = 0.4777
+Epoch 54, Objective = 0.4777
+Epoch 55, Objective = 0.4777
+Epoch 56, Objective = 0.4777
+Epoch 57, Objective = 0.4777
+Epoch 58, Objective = 0.4777
+Epoch 59, Objective = 0.4777
+Epoch 60, Objective = 0.4777
+Epoch 61, Objective = 0.4777
+Epoch 62, Objective = 0.4777
+Epoch 63, Objective = 0.4777
+Epoch 64, Objective = 0.4777
+Epoch 65, Objective = 0.4777
+Epoch 66, Objective = 0.4777
+Epoch 67, Objective = 0.4777
+Epoch 68, Objective = 0.4777
+Epoch 69, Objective = 0.4777
+Epoch 70, Objective = 0.4777
+Epoch 71, Objective = 0.4777
+Epoch 72, Objective = 0.4777
+Epoch 73, Objective = 0.4777
+Epoch 74, Objective = 0.4777
+Epoch 75, Objective = 0.4777
+Epoch 76, Objective = 0.4777
+Epoch 77, Objective = 0.4777
+Epoch 78, Objective = 0.4777
+Epoch 79, Objective = 0.4777
+Epoch 80, Objective = 0.4777
+Epoch 81, Objective = 0.4777
+Epoch 82, Objective = 0.4777
+Epoch 83, Objective = 0.4777
+Epoch 84, Objective = 0.4777
+Epoch 85, Objective = 0.4777
+Epoch 86, Objective = 0.4777
+Epoch 87, Objective = 0.4777
+Epoch 88, Objective = 0.4777
+Epoch 89, Objective = 0.4777
+Epoch 90, Objective = 0.4777
+Epoch 91, Objective = 0.4777
+Epoch 92, Objective = 0.4777
+Epoch 93, Objective = 0.4777
+Epoch 94, Objective = 0.4777
+Epoch 95, Objective = 0.4777
+Epoch 96, Objective = 0.4777
+Epoch 97, Objective = 0.4777
+Epoch 98, Objective = 0.4777
+Epoch 99, Objective = 0.4777
+Epoch 0, Objective = 0.5774
+Epoch 1, Objective = 0.5038
+Epoch 2, Objective = 0.4898
+Epoch 3, Objective = 0.4858
+Epoch 4, Objective = 0.4825
+Epoch 5, Objective = 0.4825
+Epoch 6, Objective = 0.4816
+Epoch 7, Objective = 0.4813
+Epoch 8, Objective = 0.4797
+Epoch 9, Objective = 0.4804
+Epoch 10, Objective = 0.4794
+Epoch 11, Objective = 0.4791
+Epoch 12, Objective = 0.4790
+Epoch 13, Objective = 0.4791
+Epoch 14, Objective = 0.4793
+Epoch 15, Objective = 0.4784
+Epoch 16, Objective = 0.4788
+Epoch 17, Objective = 0.4783
+Epoch 18, Objective = 0.4784
+Epoch 19, Objective = 0.4784
+Epoch 20, Objective = 0.4780
+Epoch 21, Objective = 0.4783
+Epoch 22, Objective = 0.4781
+Epoch 23, Objective = 0.4779
+Epoch 24, Objective = 0.4780
+Epoch 25, Objective = 0.4780
+Epoch 26, Objective = 0.4780
+Epoch 27, Objective = 0.4780
+Epoch 28, Objective = 0.4779
+Epoch 29, Objective = 0.4779
+Epoch 30, Objective = 0.4778
+Epoch 31, Objective = 0.4777
+Epoch 32, Objective = 0.4777
+Epoch 33, Objective = 0.4777
+Epoch 34, Objective = 0.4778
+Epoch 35, Objective = 0.4778
+Epoch 36, Objective = 0.4777
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4776
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4776
+Epoch 44, Objective = 0.4776
+Epoch 45, Objective = 0.4776
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+Epoch 0, Objective = 0.5651
+Epoch 1, Objective = 0.4993
+Epoch 2, Objective = 0.4886
+Epoch 3, Objective = 0.4841
+Epoch 4, Objective = 0.4826
+Epoch 5, Objective = 0.4818
+Epoch 6, Objective = 0.4810
+Epoch 7, Objective = 0.4807
+Epoch 8, Objective = 0.4801
+Epoch 9, Objective = 0.4804
+Epoch 10, Objective = 0.4791
+Epoch 11, Objective = 0.4790
+Epoch 12, Objective = 0.4795
+Epoch 13, Objective = 0.4793
+Epoch 14, Objective = 0.4790
+Epoch 15, Objective = 0.4788
+Epoch 16, Objective = 0.4787
+Epoch 17, Objective = 0.4786
+Epoch 18, Objective = 0.4785
+Epoch 19, Objective = 0.4787
+Epoch 20, Objective = 0.4783
+Epoch 21, Objective = 0.4782
+Epoch 22, Objective = 0.4783
+Epoch 23, Objective = 0.4783
+Epoch 24, Objective = 0.4781
+Epoch 25, Objective = 0.4780
+Epoch 26, Objective = 0.4779
+Epoch 27, Objective = 0.4780
+Epoch 28, Objective = 0.4780
+Epoch 29, Objective = 0.4778
+Epoch 30, Objective = 0.4778
+Epoch 31, Objective = 0.4778
+Epoch 32, Objective = 0.4778
+Epoch 33, Objective = 0.4778
+Epoch 34, Objective = 0.4777
+Epoch 35, Objective = 0.4777
+Epoch 36, Objective = 0.4777
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4776
+Epoch 42, Objective = 0.4776
+Epoch 43, Objective = 0.4776
+Epoch 44, Objective = 0.4776
+Epoch 45, Objective = 0.4776
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+Epoch 0, Objective = 0.5576
+Epoch 1, Objective = 0.4939
+Epoch 2, Objective = 0.4869
+Epoch 3, Objective = 0.4849
+Epoch 4, Objective = 0.4823
+Epoch 5, Objective = 0.4817
+Epoch 6, Objective = 0.4814
+Epoch 7, Objective = 0.4808
+Epoch 8, Objective = 0.4807
+Epoch 9, Objective = 0.4798
+Epoch 10, Objective = 0.4803
+Epoch 11, Objective = 0.4806
+Epoch 12, Objective = 0.4792
+Epoch 13, Objective = 0.4795
+Epoch 14, Objective = 0.4792
+Epoch 15, Objective = 0.4795
+Epoch 16, Objective = 0.4788
+Epoch 17, Objective = 0.4788
+Epoch 18, Objective = 0.4786
+Epoch 19, Objective = 0.4784
+Epoch 20, Objective = 0.4787
+Epoch 21, Objective = 0.4785
+Epoch 22, Objective = 0.4786
+Epoch 23, Objective = 0.4781
+Epoch 24, Objective = 0.4782
+Epoch 25, Objective = 0.4782
+Epoch 26, Objective = 0.4781
+Epoch 27, Objective = 0.4780
+Epoch 28, Objective = 0.4781
+Epoch 29, Objective = 0.4779
+Epoch 30, Objective = 0.4778
+Epoch 31, Objective = 0.4778
+Epoch 32, Objective = 0.4778
+Epoch 33, Objective = 0.4778
+Epoch 34, Objective = 0.4777
+Epoch 35, Objective = 0.4777
+Epoch 36, Objective = 0.4777
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4776
+Epoch 43, Objective = 0.4776
+Epoch 44, Objective = 0.4776
+Epoch 45, Objective = 0.4776
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+Epoch 0, Objective = 0.5595
+Epoch 1, Objective = 0.4908
+Epoch 2, Objective = 0.4836
+Epoch 3, Objective = 0.4850
+Epoch 4, Objective = 0.4842
+Epoch 5, Objective = 0.4842
+Epoch 6, Objective = 0.4831
+Epoch 7, Objective = 0.4811
+Epoch 8, Objective = 0.4817
+Epoch 9, Objective = 0.4805
+Epoch 10, Objective = 0.4803
+Epoch 11, Objective = 0.4804
+Epoch 12, Objective = 0.4802
+Epoch 13, Objective = 0.4794
+Epoch 14, Objective = 0.4791
+Epoch 15, Objective = 0.4794
+Epoch 16, Objective = 0.4792
+Epoch 17, Objective = 0.4787
+Epoch 18, Objective = 0.4790
+Epoch 19, Objective = 0.4787
+Epoch 20, Objective = 0.4785
+Epoch 21, Objective = 0.4784
+Epoch 22, Objective = 0.4785
+Epoch 23, Objective = 0.4783
+Epoch 24, Objective = 0.4783
+Epoch 25, Objective = 0.4781
+Epoch 26, Objective = 0.4781
+Epoch 27, Objective = 0.4780
+Epoch 28, Objective = 0.4779
+Epoch 29, Objective = 0.4779
+Epoch 30, Objective = 0.4778
+Epoch 31, Objective = 0.4779
+Epoch 32, Objective = 0.4778
+Epoch 33, Objective = 0.4779
+Epoch 34, Objective = 0.4779
+Epoch 35, Objective = 0.4778
+Epoch 36, Objective = 0.4777
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4776
+Epoch 44, Objective = 0.4776
+Epoch 45, Objective = 0.4776
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+Epoch 0, Objective = 0.5476
+Epoch 1, Objective = 0.4926
+Epoch 2, Objective = 0.4859
+Epoch 3, Objective = 0.4861
+Epoch 4, Objective = 0.4841
+Epoch 5, Objective = 0.4815
+Epoch 6, Objective = 0.4827
+Epoch 7, Objective = 0.4814
+Epoch 8, Objective = 0.4817
+Epoch 9, Objective = 0.4801
+Epoch 10, Objective = 0.4801
+Epoch 11, Objective = 0.4802
+Epoch 12, Objective = 0.4802
+Epoch 13, Objective = 0.4794
+Epoch 14, Objective = 0.4794
+Epoch 15, Objective = 0.4801
+Epoch 16, Objective = 0.4791
+Epoch 17, Objective = 0.4793
+Epoch 18, Objective = 0.4790
+Epoch 19, Objective = 0.4791
+Epoch 20, Objective = 0.4784
+Epoch 21, Objective = 0.4784
+Epoch 22, Objective = 0.4784
+Epoch 23, Objective = 0.4786
+Epoch 24, Objective = 0.4782
+Epoch 25, Objective = 0.4782
+Epoch 26, Objective = 0.4782
+Epoch 27, Objective = 0.4783
+Epoch 28, Objective = 0.4781
+Epoch 29, Objective = 0.4780
+Epoch 30, Objective = 0.4779
+Epoch 31, Objective = 0.4780
+Epoch 32, Objective = 0.4779
+Epoch 33, Objective = 0.4778
+Epoch 34, Objective = 0.4778
+Epoch 35, Objective = 0.4778
+Epoch 36, Objective = 0.4778
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4778
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4777
+Epoch 44, Objective = 0.4776
+Epoch 45, Objective = 0.4777
+Epoch 46, Objective = 0.4777
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+Epoch 0, Objective = 0.5424
+Epoch 1, Objective = 0.4935
+Epoch 2, Objective = 0.4843
+Epoch 3, Objective = 0.4854
+Epoch 4, Objective = 0.4826
+Epoch 5, Objective = 0.4838
+Epoch 6, Objective = 0.4827
+Epoch 7, Objective = 0.4813
+Epoch 8, Objective = 0.4827
+Epoch 9, Objective = 0.4824
+Epoch 10, Objective = 0.4809
+Epoch 11, Objective = 0.4817
+Epoch 12, Objective = 0.4796
+Epoch 13, Objective = 0.4809
+Epoch 14, Objective = 0.4795
+Epoch 15, Objective = 0.4803
+Epoch 16, Objective = 0.4797
+Epoch 17, Objective = 0.4795
+Epoch 18, Objective = 0.4790
+Epoch 19, Objective = 0.4791
+Epoch 20, Objective = 0.4787
+Epoch 21, Objective = 0.4784
+Epoch 22, Objective = 0.4787
+Epoch 23, Objective = 0.4785
+Epoch 24, Objective = 0.4783
+Epoch 25, Objective = 0.4783
+Epoch 26, Objective = 0.4783
+Epoch 27, Objective = 0.4783
+Epoch 28, Objective = 0.4783
+Epoch 29, Objective = 0.4782
+Epoch 30, Objective = 0.4779
+Epoch 31, Objective = 0.4779
+Epoch 32, Objective = 0.4780
+Epoch 33, Objective = 0.4781
+Epoch 34, Objective = 0.4779
+Epoch 35, Objective = 0.4778
+Epoch 36, Objective = 0.4777
+Epoch 37, Objective = 0.4778
+Epoch 38, Objective = 0.4778
+Epoch 39, Objective = 0.4778
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4777
+Epoch 44, Objective = 0.4777
+Epoch 45, Objective = 0.4777
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4777
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_55718432b9a149e8a927afad1e3aa253/831476de6aed85a87fd99843bd7127173634533e.png" /></p>
+</div>
+</div>
+<section id="answer-05-is-a-good-choice-for-stepsize"
+class="cell markdown">
+<h4>Answer: 0.5 is a good choice for stepsize</h4>
+</section>
+<section id="7-plot-and-compare-gd-sgd-and-mb-sgd"
+class="cell markdown">
+<h1>7. Plot and compare GD, SGD, and MB-SGD</h1>
+</section>
+<div class="cell markdown">
+<p>You are required to compare the following algorithms:</p>
+<ul>
+<li><p>Gradient descent (GD)</p></li>
+<li><p>SGD</p></li>
+<li><p>MB-SGD with b=8</p></li>
+<li><p>MB-SGD with b=64</p></li>
+</ul>
+<p>Follow the code in Section 4 to plot
+<code>objective function value</code> against <code>epochs</code>. There
+should be four curves in the plot; each curve corresponds to one
+algorithm.</p>
+</div>
+<div class="cell markdown">
+<p>Hint: Logistic regression with <span
+class="math inline">ℓ<sub>2</sub></span>-norm regularization is a
+strongly convex optimization problem. All the algorithms will converge
+to the same solution. <strong>In the end, the
+<code>objective function value</code> of the 4 algorithms will be the
+same. If not the same, your implementation must be wrong. Do NOT submit
+wrong code and wrong result!</strong></p>
+</div>
+<div class="cell code" data-execution_count="180">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the 4 curves:</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> <span class="fl">1e-6</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>max_epoch <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>stepsize <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>w_init <span class="op">=</span> numpy.zeros((x_train.shape[<span class="dv">1</span>], <span class="dv">1</span>))</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Gradient descent (GD)</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>w_gd, objvals_gd <span class="op">=</span> grad_descent(x_train, y_train, lam, stepsize)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a><span class="co"># SGD</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>w_sgd, objvals_sgd <span class="op">=</span> sgd(x_train, y_train, lam, stepsize)</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a><span class="co"># MB-SGD with b=8</span></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>b<span class="op">=</span><span class="dv">8</span></span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>w_mb8, objvals_mb8 <span class="op">=</span> mb_sgd(x_train, y_train, lam, b, stepsize)</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a><span class="co"># B-SGD with b=64</span></span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>b<span class="op">=</span><span class="dv">64</span></span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>w_mb64, objvals_mb64 <span class="op">=</span> mb_sgd(x_train, y_train, lam, b, stepsize)</span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>epochs <span class="op">=</span> <span class="bu">range</span>(max_epoch)</span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, objvals_gd, label<span class="op">=</span><span class="st">&#39;GD&#39;</span>)</span>
+<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, objvals_sgd, label<span class="op">=</span><span class="st">&#39;SGD&#39;</span>)</span>
+<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, objvals_mb8, label<span class="op">=</span><span class="st">&#39;MB-SGD (batch size = 8)&#39;</span>)</span>
+<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, objvals_mb64, label<span class="op">=</span><span class="st">&#39;MB-SGD (batch size = 64)&#39;</span>)</span>
+<span id="cb35-29"><a href="#cb35-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-30"><a href="#cb35-30" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Epochs&#39;</span>)</span>
+<span id="cb35-31"><a href="#cb35-31" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Objective Function Value&#39;</span>)</span>
+<span id="cb35-32"><a href="#cb35-32" aria-hidden="true" tabindex="-1"></a>plt.legend(fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb35-33"><a href="#cb35-33" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb35-34"><a href="#cb35-34" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb35-35"><a href="#cb35-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Objective value at t=0 is 0.6931471805599453
+Objective value at t=1 is 0.635486894935217
+Objective value at t=2 is 0.5988664306639844
+Objective value at t=3 is 0.574209588665333
+Objective value at t=4 is 0.5566633342201209
+Objective value at t=5 is 0.5436024231742277
+Objective value at t=6 is 0.5335317622064608
+Objective value at t=7 is 0.5255505400544526
+Objective value at t=8 is 0.5190872748620222
+Objective value at t=9 is 0.5137627106277874
+Objective value at t=10 is 0.5093152001292225
+Objective value at t=11 is 0.5055581170655197
+Objective value at t=12 is 0.50235448311605
+Objective value at t=13 is 0.4996012609703064
+Objective value at t=14 is 0.4972192925018502
+Objective value at t=15 is 0.4951466522155589
+Objective value at t=16 is 0.49333413353991495
+Objective value at t=17 is 0.49174210590558776
+Objective value at t=18 is 0.49033827619400416
+Objective value at t=19 is 0.4890960613132365
+Objective value at t=20 is 0.48799338294119754
+Objective value at t=21 is 0.4870117598781448
+Objective value at t=22 is 0.48613561415588025
+Objective value at t=23 is 0.4853517333366407
+Objective value at t=24 is 0.4846488487511675
+Objective value at t=25 is 0.4840173010487191
+Objective value at t=26 is 0.4834487723721183
+Objective value at t=27 is 0.48293606998598027
+Objective value at t=28 is 0.4824729500772168
+Objective value at t=29 is 0.4820539732327843
+Objective value at t=30 is 0.4816743851221562
+Objective value at t=31 is 0.4813300173995438
+Objective value at t=32 is 0.48101720494837813
+Objective value at t=33 is 0.48073271642449866
+Objective value at t=34 is 0.48047369568910453
+Objective value at t=35 is 0.4802376122102118
+Objective value at t=36 is 0.4800222188895296
+Objective value at t=37 is 0.4798255160673932
+Objective value at t=38 is 0.47964572069142736
+Objective value at t=39 is 0.4794812398195724
+Objective value at t=40 is 0.4793306477758668
+Objective value at t=41 is 0.4791926663961582
+Objective value at t=42 is 0.47906614789692264
+Objective value at t=43 is 0.4789500599783956
+Objective value at t=44 is 0.4788434728369309
+Objective value at t=45 is 0.4787455478137686
+Objective value at t=46 is 0.47865552745045536
+Objective value at t=47 is 0.4785727267567788
+Objective value at t=48 is 0.47849652552665783
+Objective value at t=49 is 0.47842636156207635
+Objective value at t=50 is 0.478361724685761
+Objective value at t=51 is 0.4783021514405967
+Objective value at t=52 is 0.47824722038832296
+Objective value at t=53 is 0.47819654793233807
+Objective value at t=54 is 0.4781497845998403
+Objective value at t=55 is 0.47810661172735225
+Objective value at t=56 is 0.4780667385011939
+Objective value at t=57 is 0.47802989931087536
+Objective value at t=58 is 0.4779958513788608
+Objective value at t=59 is 0.4779643726348617
+Objective value at t=60 is 0.4779352598068463
+Objective value at t=61 is 0.4779083267044455
+Objective value at t=62 is 0.47788340267342405
+Objective value at t=63 is 0.47786033120249705
+Objective value at t=64 is 0.4778389686660133
+Objective value at t=65 is 0.47781918318798966
+Objective value at t=66 is 0.4778008536146809
+Objective value at t=67 is 0.4777838685843502
+Objective value at t=68 is 0.4777681256842094
+Objective value at t=69 is 0.47775353068562143
+Objective value at t=70 is 0.4777399968496646
+Objective value at t=71 is 0.4777274442960186
+Objective value at t=72 is 0.4777157994289093
+Objective value at t=73 is 0.47770499441452224
+Objective value at t=74 is 0.4776949667048898
+Objective value at t=75 is 0.4776856586037884
+Objective value at t=76 is 0.477677016870645
+Objective value at t=77 is 0.47766899235886817
+Objective value at t=78 is 0.4776615396853842
+Objective value at t=79 is 0.4776546169284868
+Objective value at t=80 is 0.47764818535139786
+Objective value at t=81 is 0.4776422091491945
+Objective value at t=82 is 0.47763665521699167
+Objective value at t=83 is 0.4776314929374726
+Objective value at t=84 is 0.47762669398604235
+Objective value at t=85 is 0.47762223215205163
+Objective value at t=86 is 0.47761808317467763
+Objective value at t=87 is 0.4776142245921852
+Objective value at t=88 is 0.4776106356034138
+Objective value at t=89 is 0.4776072969404367
+Objective value at t=90 is 0.4776041907514399
+Objective value at t=91 is 0.4776013004929541
+Objective value at t=92 is 0.4775986108306507
+Objective value at t=93 is 0.4775961075479859
+Objective value at t=94 is 0.47759377746203596
+Objective value at t=95 is 0.4775916083459319
+Objective value at t=96 is 0.4775895888573471
+Objective value at t=97 is 0.47758770847254406
+Objective value at t=98 is 0.4775859574255259
+Objective value at t=99 is 0.47758432665188005
+Objective value at epoch t=0 is 0.8459792853066317
+Objective value at epoch t=1 is 0.800373362682141
+Objective value at epoch t=2 is 0.7693184930694826
+Objective value at epoch t=3 is 0.7551910483105428
+Objective value at epoch t=4 is 0.7074605145581432
+Objective value at epoch t=5 is 0.65757007261667
+Objective value at epoch t=6 is 0.6437769497155804
+Objective value at epoch t=7 is 0.6115403822333898
+Objective value at epoch t=8 is 0.5994050001692676
+Objective value at epoch t=9 is 0.5867304294027644
+Objective value at epoch t=10 is 0.5887694633867098
+Objective value at epoch t=11 is 0.5771966133784304
+Objective value at epoch t=12 is 0.5431976342380191
+Objective value at epoch t=13 is 0.5549898091256553
+Objective value at epoch t=14 is 0.5384215782357995
+Objective value at epoch t=15 is 0.526526564837671
+Objective value at epoch t=16 is 0.5410422521476874
+Objective value at epoch t=17 is 0.510300860745873
+Objective value at epoch t=18 is 0.5175367389364911
+Objective value at epoch t=19 is 0.5084610501131575
+Objective value at epoch t=20 is 0.5132625109563838
+Objective value at epoch t=21 is 0.5115888342395241
+Objective value at epoch t=22 is 0.5042335712022437
+Objective value at epoch t=23 is 0.5010245857283256
+Objective value at epoch t=24 is 0.5046670601792893
+Objective value at epoch t=25 is 0.4964793726879793
+Objective value at epoch t=26 is 0.49864637265074646
+Objective value at epoch t=27 is 0.4968243969108685
+Objective value at epoch t=28 is 0.4929905456436295
+Objective value at epoch t=29 is 0.49242115334806574
+Objective value at epoch t=30 is 0.49036163910473496
+Objective value at epoch t=31 is 0.4898403692456239
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/var/folders/zx/9hd8fp4948d0r4s6gk496ky00000gn/T/ipykernel_215/2481626160.py:27: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  yi = float(y_rand[i, :]) # scalar
+/var/folders/zx/9hd8fp4948d0r4s6gk496ky00000gn/T/ipykernel_215/4188564408.py:12: DeprecationWarning: Conversion of an array with ndim &gt; 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  yxw = float(numpy.dot(yx, w)) # scalar
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Objective value at epoch t=32 is 0.488100054487916
+Objective value at epoch t=33 is 0.48790465448974396
+Objective value at epoch t=34 is 0.48626807039581454
+Objective value at epoch t=35 is 0.4854520423398839
+Objective value at epoch t=36 is 0.48401011889884976
+Objective value at epoch t=37 is 0.4839137508816028
+Objective value at epoch t=38 is 0.4834407030164348
+Objective value at epoch t=39 is 0.48367783758963556
+Objective value at epoch t=40 is 0.48262584494370325
+Objective value at epoch t=41 is 0.48184106246547787
+Objective value at epoch t=42 is 0.48162501380578576
+Objective value at epoch t=43 is 0.4814618065111927
+Objective value at epoch t=44 is 0.48103201979790117
+Objective value at epoch t=45 is 0.4805030158395813
+Objective value at epoch t=46 is 0.48038843675173926
+Objective value at epoch t=47 is 0.4799245029486617
+Objective value at epoch t=48 is 0.4798825720171928
+Objective value at epoch t=49 is 0.47968812167964126
+Objective value at epoch t=50 is 0.479459441795853
+Objective value at epoch t=51 is 0.4792342847461931
+Objective value at epoch t=52 is 0.4790701463203531
+Objective value at epoch t=53 is 0.47892550692285357
+Objective value at epoch t=54 is 0.47884836246036083
+Objective value at epoch t=55 is 0.4786867612192768
+Objective value at epoch t=56 is 0.4785728176585513
+Objective value at epoch t=57 is 0.4784978297084753
+Objective value at epoch t=58 is 0.47839298395849666
+Objective value at epoch t=59 is 0.47831650034704565
+Objective value at epoch t=60 is 0.4782326204513013
+Objective value at epoch t=61 is 0.4781714080544668
+Objective value at epoch t=62 is 0.47810331488146895
+Objective value at epoch t=63 is 0.47805543488680613
+Objective value at epoch t=64 is 0.4780009427805453
+Objective value at epoch t=65 is 0.4779601741570474
+Objective value at epoch t=66 is 0.4779243248935541
+Objective value at epoch t=67 is 0.47788869338235934
+Objective value at epoch t=68 is 0.47785413209676875
+Objective value at epoch t=69 is 0.4778258229017941
+Objective value at epoch t=70 is 0.4777991831848234
+Objective value at epoch t=71 is 0.47777617789389826
+Objective value at epoch t=72 is 0.4777542899128301
+Objective value at epoch t=73 is 0.477735554834221
+Objective value at epoch t=74 is 0.4777181161981351
+Objective value at epoch t=75 is 0.47770247299857366
+Objective value at epoch t=76 is 0.4776887642398185
+Objective value at epoch t=77 is 0.4776759862802161
+Objective value at epoch t=78 is 0.47766461609262595
+Objective value at epoch t=79 is 0.47765455484058084
+Objective value at epoch t=80 is 0.4776453044897931
+Objective value at epoch t=81 is 0.47763697340155176
+Objective value at epoch t=82 is 0.4776294592046343
+Objective value at epoch t=83 is 0.4776227876268112
+Objective value at epoch t=84 is 0.4776166924667284
+Objective value at epoch t=85 is 0.4776112918097085
+Objective value at epoch t=86 is 0.47760638324802046
+Objective value at epoch t=87 is 0.47760195030628944
+Objective value at epoch t=88 is 0.4775979592545162
+Objective value at epoch t=89 is 0.47759440091387273
+Objective value at epoch t=90 is 0.47759117853308436
+Objective value at epoch t=91 is 0.47758829252789897
+Objective value at epoch t=92 is 0.4775856713058978
+Objective value at epoch t=93 is 0.47758332347076127
+Objective value at epoch t=94 is 0.47758121404578147
+Objective value at epoch t=95 is 0.47757931113026936
+Objective value at epoch t=96 is 0.47757760063912624
+Objective value at epoch t=97 is 0.47757605577473805
+Objective value at epoch t=98 is 0.477574668821084
+Objective value at epoch t=99 is 0.47757342307061146
+Epoch 0, Objective = 0.5216
+Epoch 1, Objective = 0.5110
+Epoch 2, Objective = 0.5021
+Epoch 3, Objective = 0.5083
+Epoch 4, Objective = 0.4970
+Epoch 5, Objective = 0.4964
+Epoch 6, Objective = 0.5006
+Epoch 7, Objective = 0.4946
+Epoch 8, Objective = 0.4943
+Epoch 9, Objective = 0.4913
+Epoch 10, Objective = 0.4903
+Epoch 11, Objective = 0.4920
+Epoch 12, Objective = 0.4891
+Epoch 13, Objective = 0.4879
+Epoch 14, Objective = 0.4881
+Epoch 15, Objective = 0.4846
+Epoch 16, Objective = 0.4855
+Epoch 17, Objective = 0.4843
+Epoch 18, Objective = 0.4837
+Epoch 19, Objective = 0.4831
+Epoch 20, Objective = 0.4813
+Epoch 21, Objective = 0.4826
+Epoch 22, Objective = 0.4822
+Epoch 23, Objective = 0.4817
+Epoch 24, Objective = 0.4808
+Epoch 25, Objective = 0.4805
+Epoch 26, Objective = 0.4803
+Epoch 27, Objective = 0.4803
+Epoch 28, Objective = 0.4799
+Epoch 29, Objective = 0.4798
+Epoch 30, Objective = 0.4794
+Epoch 31, Objective = 0.4793
+Epoch 32, Objective = 0.4791
+Epoch 33, Objective = 0.4790
+Epoch 34, Objective = 0.4787
+Epoch 35, Objective = 0.4787
+Epoch 36, Objective = 0.4786
+Epoch 37, Objective = 0.4784
+Epoch 38, Objective = 0.4783
+Epoch 39, Objective = 0.4783
+Epoch 40, Objective = 0.4783
+Epoch 41, Objective = 0.4782
+Epoch 42, Objective = 0.4782
+Epoch 43, Objective = 0.4781
+Epoch 44, Objective = 0.4780
+Epoch 45, Objective = 0.4780
+Epoch 46, Objective = 0.4779
+Epoch 47, Objective = 0.4779
+Epoch 48, Objective = 0.4779
+Epoch 49, Objective = 0.4779
+Epoch 50, Objective = 0.4778
+Epoch 51, Objective = 0.4778
+Epoch 52, Objective = 0.4778
+Epoch 53, Objective = 0.4778
+Epoch 54, Objective = 0.4777
+Epoch 55, Objective = 0.4777
+Epoch 56, Objective = 0.4777
+Epoch 57, Objective = 0.4777
+Epoch 58, Objective = 0.4777
+Epoch 59, Objective = 0.4777
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+Epoch 0, Objective = 0.5736
+Epoch 1, Objective = 0.5041
+Epoch 2, Objective = 0.4897
+Epoch 3, Objective = 0.4851
+Epoch 4, Objective = 0.4821
+Epoch 5, Objective = 0.4824
+Epoch 6, Objective = 0.4808
+Epoch 7, Objective = 0.4801
+Epoch 8, Objective = 0.4798
+Epoch 9, Objective = 0.4795
+Epoch 10, Objective = 0.4797
+Epoch 11, Objective = 0.4793
+Epoch 12, Objective = 0.4792
+Epoch 13, Objective = 0.4787
+Epoch 14, Objective = 0.4787
+Epoch 15, Objective = 0.4786
+Epoch 16, Objective = 0.4785
+Epoch 17, Objective = 0.4784
+Epoch 18, Objective = 0.4782
+Epoch 19, Objective = 0.4783
+Epoch 20, Objective = 0.4783
+Epoch 21, Objective = 0.4780
+Epoch 22, Objective = 0.4781
+Epoch 23, Objective = 0.4780
+Epoch 24, Objective = 0.4781
+Epoch 25, Objective = 0.4780
+Epoch 26, Objective = 0.4780
+Epoch 27, Objective = 0.4779
+Epoch 28, Objective = 0.4779
+Epoch 29, Objective = 0.4778
+Epoch 30, Objective = 0.4779
+Epoch 31, Objective = 0.4778
+Epoch 32, Objective = 0.4778
+Epoch 33, Objective = 0.4778
+Epoch 34, Objective = 0.4778
+Epoch 35, Objective = 0.4777
+Epoch 36, Objective = 0.4777
+Epoch 37, Objective = 0.4777
+Epoch 38, Objective = 0.4777
+Epoch 39, Objective = 0.4777
+Epoch 40, Objective = 0.4777
+Epoch 41, Objective = 0.4777
+Epoch 42, Objective = 0.4777
+Epoch 43, Objective = 0.4776
+Epoch 44, Objective = 0.4776
+Epoch 45, Objective = 0.4776
+Epoch 46, Objective = 0.4776
+Epoch 47, Objective = 0.4776
+Epoch 48, Objective = 0.4776
+Epoch 49, Objective = 0.4776
+Epoch 50, Objective = 0.4776
+Epoch 51, Objective = 0.4776
+Epoch 52, Objective = 0.4776
+Epoch 53, Objective = 0.4776
+Epoch 54, Objective = 0.4776
+Epoch 55, Objective = 0.4776
+Epoch 56, Objective = 0.4776
+Epoch 57, Objective = 0.4776
+Epoch 58, Objective = 0.4776
+Epoch 59, Objective = 0.4776
+Epoch 60, Objective = 0.4776
+Epoch 61, Objective = 0.4776
+Epoch 62, Objective = 0.4776
+Epoch 63, Objective = 0.4776
+Epoch 64, Objective = 0.4776
+Epoch 65, Objective = 0.4776
+Epoch 66, Objective = 0.4776
+Epoch 67, Objective = 0.4776
+Epoch 68, Objective = 0.4776
+Epoch 69, Objective = 0.4776
+Epoch 70, Objective = 0.4776
+Epoch 71, Objective = 0.4776
+Epoch 72, Objective = 0.4776
+Epoch 73, Objective = 0.4776
+Epoch 74, Objective = 0.4776
+Epoch 75, Objective = 0.4776
+Epoch 76, Objective = 0.4776
+Epoch 77, Objective = 0.4776
+Epoch 78, Objective = 0.4776
+Epoch 79, Objective = 0.4776
+Epoch 80, Objective = 0.4776
+Epoch 81, Objective = 0.4776
+Epoch 82, Objective = 0.4776
+Epoch 83, Objective = 0.4776
+Epoch 84, Objective = 0.4776
+Epoch 85, Objective = 0.4776
+Epoch 86, Objective = 0.4776
+Epoch 87, Objective = 0.4776
+Epoch 88, Objective = 0.4776
+Epoch 89, Objective = 0.4776
+Epoch 90, Objective = 0.4776
+Epoch 91, Objective = 0.4776
+Epoch 92, Objective = 0.4776
+Epoch 93, Objective = 0.4776
+Epoch 94, Objective = 0.4776
+Epoch 95, Objective = 0.4776
+Epoch 96, Objective = 0.4776
+Epoch 97, Objective = 0.4776
+Epoch 98, Objective = 0.4776
+Epoch 99, Objective = 0.4776
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_55718432b9a149e8a927afad1e3aa253/68eea96da2ed43eaf2c97e3328d5bfd4a7febb6d.png" /></p>
+</div>
+</div>
+<div class="cell markdown">
+
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
